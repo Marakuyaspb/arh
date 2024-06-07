@@ -1,12 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,500i,600,600i,700,700i |Cormorant+SC:400,500,600,700');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* ====================================
 General Styles
 ==================================== */
 
-body {
-  background-color: #000;
-}
 
 .page-wrap {
   width: 100%;
@@ -14,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right bottom, #2a1f30 50%, #383d44 50%);
+ /* background: linear-gradient(to right bottom, #2a1f30 50%, #383d44 50%);*/
 }
 
 /* ====================================
@@ -23,7 +21,7 @@ Home Slider
 
 #home-slider {
   height: 80vh;
-  width: 90vw;
+  width: 100%;
   position: relative;
 
 }
