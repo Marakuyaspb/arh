@@ -676,3 +676,8 @@ button.swiper-pagination-bullet {
     transform: rotate(360deg);
   }
 }
+
+
+.transperent_bg {
+  background: transparent!important;
+}
