@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,500,500i,600,600i,700,700i |Cormorant+SC:400,500,600,700');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /* ====================================
 General Styles
 ==================================== */
@@ -12,11 +10,10 @@ General Styles
   display: flex;
   justify-content: center;
   align-items: center;
- /* background: linear-gradient(to right bottom, #2a1f30 50%, #383d44 50%);*/
 }
 
 /* ====================================
-Home Slider
+The Slider
 ==================================== */
 
 #home-slider {
@@ -31,29 +28,7 @@ Home Slider
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
-.swiper-image-one {
-  background-image: url(https://source.unsplash.com/GXOGGENgHnQ/1600x900);
-}
 
-.swiper-image-two {
-  background-image: url(https://source.unsplash.com/Jy6luiLBsrk/1600x900);
-}
-
-.swiper-image-three {
-  background-image: url(https://source.unsplash.com/sFLVTqNzG2I/1600x900);
-}
-
-.swiper-image-four {
-  background-image: url(https://source.unsplash.com/pj1jt4vBGZY/1600x900);
-}
-
-.swiper-image-five {
-  background-image: url(https://source.unsplash.com/Jy6luiLBsrk/1600x900);
-}
-
-.swiper-image-six {
-  background-image: url(https://source.unsplash.com/bxCgan0J1Sg/1600x900);
-}
 
 .swiper-image {
   width: 50%;
@@ -90,7 +65,6 @@ Home Slider
   background-blend-mode: multiply;
 }
 h1 {
-  font-family: 'Cormorant Garamond', serif;
   font-weight: 500;
   color: #fff;
   align-self: flex-start;
@@ -113,7 +87,6 @@ h1 span:not(.emphasis) {
   font-size: 3.5rem;
 }
 h1 + p {
-  font-family: 'Cormorand SC';
   font-size: 14px;
   letter-spacing: 2px;
   margin: 0;
@@ -130,7 +103,6 @@ h1 + p {
 }
 p.paragraph {
   margin: 0;
-  font-family: 'Cormorant Garamond', serif;
   color: #fff;
   width: 100%;
   max-width: 350px;
