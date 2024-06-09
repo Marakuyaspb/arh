@@ -3,28 +3,100 @@
 
 {% block content %}
 
-<video autoplay loop class='video_header'>
+<div class='d-none d-lg-block d-xl-block d-xxl-block'>
+<video autoplay loop class='video_header '>
 <!-- <video autoplay controls> -->
-  <source src="{% static 'video/sport_ground.mp4' %}" type="video/mp4">
+  <source src="{% static 'video/plan.mp4' %}" type="video/mp4">
 </video>
+</div>
+
+<div class=' d-block d-lg-none'>
+  <img class="w-100" src="{% static 'img/headers/head_index.png' %}">
+</div>
+
+<div class='container h1_header'>
+  <h1>Архитектурно-инженерная компания «РЕНОВАЦИЯ»</h1>
+  <h2 class='we_300'>Профессиональные решения вопросов в области проектирования</h2>
+  <a href='#'><div class='button_form blue_bg mt-3 mb-5 black'>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</div></a>
+</div>
+<br><br><br><br><br>
 
 <div class='container mt-5'>
-  <section id='#about' class=''>
-    <h2 class='gray h2index'>О компании</h2>
+  <section id='#about' class='mt-5'>
+    <div class='row'>
+      <div class='col-md'>
+        <h2 class='black h2index pb-2'>О компании</h2>
+        <p class='we_300'>Реновация предлагает проектно-изыскательные работы при строительстве новых и реконструкции действующих объектов жилого и общественного назначения любой степени сложности.</p>
+
+        <p class='we_300'>Руководство и специалисты компании имеют большой опыт в проектировании и осуществлении авторского надзора.</p>
+      </div>
+      <div class='col-md'>
+        <h2 class='black h2index pb-2'>Миссия</h2>
+        <p class='we_300'>Стратегическая цель компании – повышение эффективности проектирования, сокращение расходов средств Заказчика и сроков проектирования при высоком уровне качества выполнения работ.</p>
+
+        <p class='we_300'>Миссия компании – лидерство в области проектирования. Применение передовых технологий производства и управления.</p>
+      </div>
+    </div>
+
+
+    <h2 class='black h2index pb-2'>Услуги</h2>
+        <p>
+
   </section>
 
 
-  <section id='#team' class=''>
-    <h2 class='gray h2index'>Команда</h2>
+  <section id='#team' class='mb-5'>
+
+    <div class='row'>
+      <div class='col-md'>
+        <h2 class='black h2index'>Команда</h2>
+      </div>
+      <div class='col-md'>
+          <img src="{% static 'img/team/mavlutov.webp' %}" class=" team_photo">
+          <h4>Мавлютов Адель Маратович</h4>
+          <p class='role'>Директор
+      </div>
+      <div class='col-md'>
+          <img src="{% static 'img/team/hafizov.png' %}" class="team_photo">
+          <h4>Хафизов Павел Сергеевич</h4>
+          <p class='role'>Главный архитектор
+      </div>
+    </div>
+    <div class='row pt-4'>
+      <div class='col-md '>
+          <img src="{% static 'img/team/Yagofarov.png' %}" class="team_photo">
+          <h4>Ягофаров Динар Шамилевич</h4>
+          <p class='role'>Главный инженер
+      </div>
+      <div class='col-md'>
+          <img src="{% static 'img/team/Shakirov.webp' %}" class="team_photo">
+          <h4>Шакиров Булат Маратович</h4>
+          <p class='role'>Архитектор
+      </div>
+      <div class='col-md'>
+          <img src="{% static 'img/team/Gatiatullin.webp' %}" class="team_photo">
+          <h4>Гатиатуллин Фанис Халимович</h4>
+          <p class='role'>Инженер
+      </div>
+    </div>
+
   </section>
 
 
-  <section id='#partners' class=''>
-    <h2 class='gray h2index'>Партнеры</h2>
+  <section id='#partners' class='my-3'>
+    <h2 class='black h2index'>Партнеры</h2>
+
+    <div class='d-flex justify-content-between my-5'>
+      <img src="{% static 'img/partners/logo-part-1.png' %}" class="partners_rect">
+      <img src="{% static 'img/partners/logo-part-2.png' %}" class="partners">
+      <img src="{% static 'img/partners/logo-part-3.png' %}" class="partners">
+      <img src="{% static 'img/partners/logo-part-4.png' %}" class="partners_rect">
+
+    </div>
   </section>
 
   <section id='#contact' class=''>
-    <h2 class='gray h2index'>Контакты</h2>
+    <h2 class='black h2index'>Контакты</h2>
   </section>
 </div>
 
