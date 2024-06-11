@@ -21,6 +21,24 @@ video{
 a {
   text-decoration: none!important;
 }
+input{
+  width: 100%;
+  border: 1px solid #010305;
+  border-radius: 8px;
+  padding: 6px;
+}
+input:focus{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #010305!important;
+}
+input:focus-visible{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #010305;
+}
+input:active{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #010305;
+}
 h4{
   font-size: 1.3em!important;
 }
@@ -166,6 +184,16 @@ hr{
   max-width: 18em;
   padding: 1.2em;
   background-color: rgba(121,183,238, .8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button_dark{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #f3f8fd;
+  background-color: #010305;
+  padding: .7em 1em;
+  border-radius: 8px;
+  border: 1px solid #010305;
 }
 
 .team_photo{
@@ -204,6 +232,9 @@ hr{
 }
 .small{
   font-size: .8em;
+}
+.smaller{
+  font-size: .7em;
 }
 .we_300{
     font-weight: 300;
@@ -304,8 +335,12 @@ hr{
   }
 
 .callme_container{
-  margin-top: 8em;
+  margin-top: 7em;
   margin-left: auto;
   margin-right: auto;
-  width: 33%;
+  width: 20%;
+}
+.form_container{
+  padding: 2em 2em 1em 2em;
+
 }

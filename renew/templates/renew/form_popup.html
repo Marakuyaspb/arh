@@ -1,13 +1,27 @@
-<form method="post" class="callme_container white_bg py-3">
+ {% load static %}
+ <div class='modal_container' onclick='showModal(this);'>
+    <div class='thumb button_form blue_bg mt-3 mb-5 black'>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</div>
 
-	{{ form.callme_form }}
-	
-	{% csrf_token %}
-	<div class=''>
-		<center class='py-3'><input type="submit" value="Получить консультацию" class="button_form"></center>
-	</div>
+    <div class='modal_full hide'>
+      <span class="close" onclick="closeModal(this);">&times;</span>
 
-	<p class='px-5 pt-3 small'>* Нажимая на кнопку "Получить консультацию", Вы соглашаетесь с <u><a class='gray_dark' href='{% url "renew:privacy" %}'>Политикой конфиденциальности</a></u>.</p>
-</form>
+      <div class=''>
+        
+        <form method="post" class="callme_container white_bg">
+          <img class='w-100' src='{% static "img/headers/pattern.jpg" %}'>
+          <div class='form_container we_300'>
+            <h3 class='pb-3'>Заказать звонок</h3>
 
+            {{ callme_form.as_p }}
+            
+            {% csrf_token %}
+          
+          <center class='py-3'><input type="submit" value="Получить консультацию" class="button_dark"></center>
 
+          <p class='pt-3 smaller'>* Нажимая на кнопку "Получить консультацию", Вы соглашаетесь с <u><a class='gray_dark' href='{% url "renew:privacy" %}'>Политикой конфиденциальности</a></u>.</p>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>

@@ -15,7 +15,12 @@ def error_404_view(request, exception):
 	return render(request, '404.html', status=40)
 
 def index(request):
-	return render(request, 'renew/index.html')
+	callme_form = CallMeForm()
+	context = {
+			'callme_form': callme_form
+			}
+	return render(request, 'renew/index.html', context)
+
 
 def improvement(request):
 	return render(request, 'renew/improvement.html')
@@ -30,12 +35,13 @@ def screening(request):
 def case(request, product_slug=None):
 	callme_form = CallMeForm()
 
-	if product_slug:
+	if id:
 		case = get_object_or_404(Case, id=id)
 		similar_cases = Case.objects.filter(category=case.category)
 
 		return render(request, 'renew/the_case.html', {
 			'case': case,
-			'similar_cases': similar_cases
+			'similar_cases': similar_cases,
+			'callme_form': callme_form
 			}
 		)
