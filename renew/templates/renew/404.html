@@ -1,0 +1,18 @@
+{% extends 'renew/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<h1>404</h1>
+
+<h2>На сайте пока нет такой страницы :(</h2>
+
+<div class="d-flex justify-content-center">
+	<a class="nav-link" href='{% url "renew:improvement" %}'>Благоустройство</a>
+	<span class='pt-2'>|</span>
+    <a class="nav-link" href='{% url "renew:projection" %}'>Проектирование</a>
+    <span class='pt-2'>|</span>
+    <a class="nav-link" href='{% url "renew:screening" %}'>Обследование</a>
+</div>
+
+{% endblock%}

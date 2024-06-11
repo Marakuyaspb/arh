@@ -1,0 +1,13 @@
+<form method="post" class="callme_container white_bg py-3">
+
+	{{ form.callme_form }}
+	
+	{% csrf_token %}
+	<div class=''>
+		<center class='py-3'><input type="submit" value="Получить консультацию" class="button_form"></center>
+	</div>
+
+	<p class='px-5 pt-3 small'>* Нажимая на кнопку "Получить консультацию", Вы соглашаетесь с <u><a class='gray_dark' href='{% url "renew:privacy" %}'>Политикой конфиденциальности</a></u>.</p>
+</form>
+
+
