@@ -1,0 +1,224 @@
+2024-06-13 11:48:40,043 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 11:49:46,166 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 11:50:08,052 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 11:50:52,015 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 11:52:05,295 - /home/a/ar/renew/templates/renew/tasks.py changed, reloading.
+2024-06-13 11:52:44,057 - /home/a/ar/renew/templates/renew/tasks.py changed, reloading.
+2024-06-13 11:52:51,451 - /home/a/ar/renew/templates/renew/tasks.py changed, reloading.
+2024-06-13 11:53:12,015 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 11:55:04,861 - /home/a/ar/renew/templates/renew/tasks.py changed, reloading.
+2024-06-13 11:59:00,107 - /home/a/ar/arh/settings.py changed, reloading.
+2024-06-13 12:00:53,836 - /home/a/ar/renew/templates/renew/tasks.py changed, reloading.
+2024-06-13 12:01:12,275 - /home/a/ar/renew/templates/renew/tasks.py changed, reloading.
+2024-06-13 12:01:32,748 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 12:04:30,142 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 12:04:45,704 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 12:05:12,464 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 12:05:15,467 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 37, in index
+    return render(request, 'renew/index.html', { context })
+TypeError: unhashable type: 'dict'
+2024-06-13 12:05:15,657 - Not Found: /favicon.ico
+2024-06-13 12:05:35,435 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 12:05:40,049 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 37, in index
+    return render(request, 'renew/index.html', {context})
+TypeError: unhashable type: 'dict'
+2024-06-13 12:05:52,105 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 12:06:35,007 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 29, in index
+    send_email_task.delay(callme.first_name)
+NameError: name 'callme' is not defined
+2024-06-13 12:07:20,905 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 12:07:23,829 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 29, in index
+    send_email_task.delay(callme_form.first_name)
+AttributeError: 'CallMeForm' object has no attribute 'first_name'
+2024-06-13 12:07:28,494 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 12:07:37,883 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 29, in index
+    send_email_task.delay(callme.first_name)
+NameError: name 'callme' is not defined
+2024-06-13 12:08:29,678 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 12:08:34,056 - No hostname was supplied. Reverting to default 'localhost'
+2024-06-13 12:08:40,193 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/utils/functional.py", line 32, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/utils/functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 934, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/transport/pyamqp.py", line 203, in establish_connection
+    conn.connect()
+  File "/home/a/.local/lib/python3.10/site-packages/amqp/connection.py", line 324, in connect
+    self.transport.connect()
+  File "/home/a/.local/lib/python3.10/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/home/a/.local/lib/python3.10/site-packages/amqp/transport.py", line 184, in _connect
+    self.sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 29, in index
+    send_email_task.delay(callme.first_name)
+  File "/home/a/.local/lib/python3.10/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/a/.local/lib/python3.10/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/a/.local/lib/python3.10/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/messaging.py", line 186, in publish
+    return _publish(
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/messaging.py", line 195, in _publish
+    channel = self.channel
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/messaging.py", line 218, in _get_channel
+    channel = self._channel = channel()
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/utils/functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/messaging.py", line 234, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 953, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 458, in _ensure_connection
+    with ctx():
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno 111] Connection refused
+2024-06-13 12:09:04,031 - No hostname was supplied. Reverting to default 'localhost'
+2024-06-13 12:09:10,157 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/utils/functional.py", line 32, in __call__
+    return self.__value__
+AttributeError: 'ChannelPromise' object has no attribute '__value__'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 472, in _reraise_as_library_errors
+    yield
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 459, in _ensure_connection
+    return retry_over_time(
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/utils/functional.py", line 318, in retry_over_time
+    return fun(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 934, in _connection_factory
+    self._connection = self._establish_connection()
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 860, in _establish_connection
+    conn = self.transport.establish_connection()
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/transport/pyamqp.py", line 203, in establish_connection
+    conn.connect()
+  File "/home/a/.local/lib/python3.10/site-packages/amqp/connection.py", line 324, in connect
+    self.transport.connect()
+  File "/home/a/.local/lib/python3.10/site-packages/amqp/transport.py", line 129, in connect
+    self._connect(self.host, self.port, self.connect_timeout)
+  File "/home/a/.local/lib/python3.10/site-packages/amqp/transport.py", line 184, in _connect
+    self.sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 29, in index
+    send_email_task.delay(callme.first_name)
+  File "/home/a/.local/lib/python3.10/site-packages/celery/app/task.py", line 425, in delay
+    return self.apply_async(args, kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/celery/app/task.py", line 575, in apply_async
+    return app.send_task(
+  File "/home/a/.local/lib/python3.10/site-packages/celery/app/base.py", line 788, in send_task
+    amqp.send_task_message(P, name, message, **options)
+  File "/home/a/.local/lib/python3.10/site-packages/celery/app/amqp.py", line 510, in send_task_message
+    ret = producer.publish(
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/messaging.py", line 186, in publish
+    return _publish(
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 556, in _ensured
+    return fun(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/messaging.py", line 195, in _publish
+    channel = self.channel
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/messaging.py", line 218, in _get_channel
+    channel = self._channel = channel()
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/utils/functional.py", line 34, in __call__
+    value = self.__value__ = self.__contract__()
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/messaging.py", line 234, in <lambda>
+    channel = ChannelPromise(lambda: connection.default_channel)
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 953, in default_channel
+    self._ensure_connection(**conn_opts)
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 458, in _ensure_connection
+    with ctx():
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/a/.local/lib/python3.10/site-packages/kombu/connection.py", line 476, in _reraise_as_library_errors
+    raise ConnectionError(str(exc)) from exc
+kombu.exceptions.OperationalError: [Errno 111] Connection refused
+2024-06-13 12:09:47,949 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 12:09:55,338 - Not Found: /404
+2024-06-13 12:10:01,180 - Not Found: /404
+2024-06-13 12:10:34,406 - /home/a/ar/arh/urls.py changed, reloading.
+2024-06-13 12:10:59,856 - /home/a/ar/arh/urls.py changed, reloading.
+2024-06-13 12:11:07,231 - /home/a/ar/arh/urls.py changed, reloading.
+2024-06-13 12:11:08,593 - Not Found: /404
+2024-06-13 12:11:09,564 - Not Found: /404
+2024-06-13 12:11:18,226 - Not Found: /4040
+2024-06-13 12:11:43,564 - /home/a/ar/arh/urls.py changed, reloading.
+2024-06-13 12:12:38,683 - /home/a/ar/arh/urls.py changed, reloading.
+2024-06-13 12:13:22,625 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 12:13:26,270 - Not Found: /4040
+2024-06-13 12:13:27,177 - Not Found: /4040
+2024-06-13 12:13:40,689 - Not Found: /4asdfghj
+2024-06-13 12:13:55,729 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-13 12:13:57,161 - Not Found: /4asdfghj
+2024-06-13 12:13:58,215 - Not Found: /4asdfghj
+2024-06-13 12:14:09,588 - Not Found: /4asdfghj
+2024-06-13 12:14:09,749 - Not Found: /favicon.ico
+2024-06-13 12:16:08,808 - /home/a/ar/arh/settings.py changed, reloading.

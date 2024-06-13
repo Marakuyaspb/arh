@@ -54,7 +54,7 @@ class Case(models.Model):
 
 
 class CallMe(models.Model):
-	call_id = models.AutoField(primary_key=True)
+	id = models.AutoField(primary_key=True)
 	first_name = models.CharField(max_length=30, verbose_name = 'Имя')
 	phone = models.CharField(max_length=30, verbose_name = 'Телефон')
 	email = models.CharField(max_length=30, verbose_name = 'E-mail')
