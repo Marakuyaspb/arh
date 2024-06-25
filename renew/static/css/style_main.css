@@ -97,18 +97,14 @@ hr{
 .blur_bg{
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  background-color: rgba(255,255,255, .3);
+  background-color: rgba(255,255,255, .5);
 }
 .blur_bg_contact{
     backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
 
-.video_header{
-  margin-top: -10em;
-  position: relative;
-  z-index: -999;
-}
+
 
 .nav-link{
   color: #010305!important;
@@ -119,10 +115,6 @@ hr{
   color: #0c365c!important;
 }
 
-.
-{
-  font-size: 1.5em;
-}
 .nav_footer{
   color: #a2b5c5!important;
   font-weight: 300;
@@ -137,12 +129,10 @@ hr{
   max-width: 3.3em;
   margin-top: .2em;
 }
-
-.brand_aik {
-  font-size: 1.5em!important;
-  font-weight: 300;
-  padding-top: .6em;
+.logo_mob{
+  height: 2.6em;
 }
+
 .smm_head{
     max-width: 3em;
     margin-top: .1em;
@@ -176,10 +166,12 @@ hr{
   margin-top: -1.4em;
 }
 
-.h1_header{
-  margin-top: -30em;
-  padding-bottom: 6em;
+.infogr_icon{
+  height: 5em;
+  margin-right: auto;
+  margin-left: auto;
 }
+
 
 .button_form{
   border-radius: 8px;
@@ -216,6 +208,49 @@ hr{
 }
 
 
+.h2_card_bg{
+  font-weight: 300;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.card_bg{
+  padding-top: 10em;
+  padding-bottom: 10em;
+
+  width: 100%;
+}
+
+/* be_many_angles.webp  */
+#improvement{
+  background-image: url(http://127.0.0.1:8000/static/img/gif/white_breath.webp);
+  background-size: 96% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#projection{
+  background-image: url(http://127.0.0.1:8000/static/img/gif/black_geometry.webp);
+  background-size: 96% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#screening{
+  background-image: url(http://127.0.0.1:8000/static/img/gif/white_oktaedr.webp);
+  background-size: 96% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#team_pattern{
+  background-image: url(http://127.0.0.1:8000/static/img/gif/many_angle.webp);
+  background-size: 96% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+
+
 .map_wrapper{
   padding: 5em 0 0 14em;
 }
@@ -250,6 +285,8 @@ hr{
 }
 
 
+
+
 /*  MODAL WINDOW  */
 .modal_full{
   display: none;
@@ -263,31 +300,75 @@ hr{
   background-color: rgba(0, 0, 0, 0.5)!important;
 }
 
-@media (min-width: 811px){
-    .art_container {
-      display: grid;
-      grid-gap: 20px;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      width: 96%;
-      margin-left: auto;
-      margin-right: auto;
-    }
 
-    .full_img{
-      height: 90%;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
+/* DESCTOP */
+@media (min-width: 811px){
+
+  .video_header{
+    margin-top: -10em;
+    position: relative;
+    z-index: -999;
+  }
+  .h1_header{
+    margin-top: -30em;
+    padding-bottom: 6em;
+  }
+
+  .art_container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .full_img{
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .brand_aik {
+    font-size: 1.5em!important;
+    font-weight: 300;
+    padding-top: .6em;
+  }
 
     .thumb{
       width: 100%;
     }
 
+    .partner_logo{
+      max-height: 5em
+    }
+
+
   }
   /* PHONE */
   @media (max-width: 810px) {
+
+    .video_header {
+      margin-top: -10em;
+      position: relative;
+      z-index: -999;
+      width: auto;
+      height: 110vh;
+      object-fit: cover;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+    }
+    .h1_header{
+      margin-top: 8em;
+      padding-bottom: 6em;
+    }
+
+
     .art_container {
       display: grid;
       grid-gap: 10px;
@@ -305,10 +386,25 @@ hr{
       transform: translate(-50%, -50%);
     }
 
+    .brand_aik {
+      font-size: 1.2em!important;
+      font-weight: 300;
+      padding-top: .6em;
+    }
+
     .thumb{
       width: 90%;
     }
 
+    .partner_logo{
+      max-height: 2.2em
+    }
+
+
+  }
+
+  .mob_header_img{
+    margin-top: -4.5em;
   }
 
   .modal_container{
@@ -347,3 +443,4 @@ hr{
   padding: 2em 2em 1em 2em;
 
 }
+

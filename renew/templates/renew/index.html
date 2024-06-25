@@ -3,59 +3,28 @@
 
 {% block content %}
 
-<div class='d-none d-lg-block d-xl-block d-xxl-block'>
-<video autoplay loop class='video_header '>
-<!-- <video autoplay controls> -->
-  <source src="{% static 'video/plan.mp4' %}" type="video/mp4">
-</video>
-</div>
 
-<div class=' d-block d-lg-none'>
-  <img class="w-100" src="{% static 'img/headers/head_index.png' %}">
-</div>
+  <video autoplay loop class='video_header '>
+  <!-- <video autoplay controls> -->
+    <source src="{% static 'video/plan.mp4' %}" type="video/mp4">
+  </video>
 
-<div class='container h1_header'>
-  <h1>Архитектурно-инженерная компания «РЕНОВАЦИЯ»</h1>
-  <h2 class='pt-2 pb-4 we_300'>Профессиональные решения вопросов в области проектирования</h2>
-   {% include 'renew/form_popup.html' %}
-  <!-- <div class='modal_container' onclick='showModal(this);'>
-    <div class='thumb button_form blue_bg mt-3 mb-5 black'>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</div>
 
-    <div class='modal_full hide'>
-      <span class="close" onclick="closeModal(this);">&times;</span>
 
-      <div class=''>
-        
-        <form method="post" class="callme_container white_bg">
-          <img class='w-100' src='{% static "img/headers/pattern.jpg" %}'>
-          <div class='form_container we_300'>
-            <h3 class='pb-3'>Заказать обратный звонок</h3>
-
-            {{ callme_form.as_p }}
-            
-            {% csrf_token %}
-          
-          <center class='py-3'><input type="submit" value="Получить консультацию" class="button_dark"></center>
-
-          <p class='pt-3 smaller'>* Нажимая на кнопку "Получить консультацию", Вы соглашаетесь с <u><a class='gray_dark' href='{% url "renew:privacy" %}'>Политикой конфиденциальности</a></u>.</p>
-          </div>
-        </form>
-
-      </div>
-    </div>
+  <div class='container h1_header'>
+    <h1>Архитектурно-инженерная компания «РЕНОВАЦИЯ»</h1>
+    <h2 class='pt-2 pb-4 we_300'>Профессиональные решения вопросов в области проектирования</h2>
+     {% include 'renew/form_popup.html' %}
   </div>
-  -->
-</div>
-<br><br>
 
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4da30953424426066865b523b35cc234203676fb3747fd2ef0df3d7a1dcd712d&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-<br><br>
 
+<div class='d-none d-lg-block d-xl-block d-xxl-block '><br><br><br><br></div>
 
 
 <div class='container mt-5'>
+
   <section id='#about' class='mt-5'>
-    <div class='row'>
+    <div class='row pt-5'>
       <div class='col-md'>
         <h2 class='black h2index pb-2'>О компании</h2>
         <p class='we_300'>Реновация предлагает проектно-изыскательные работы при строительстве новых и реконструкции действующих объектов жилого и общественного назначения любой степени сложности.</p>
@@ -70,22 +39,75 @@
       </div>
     </div>
 
+      
+      <div class='row py-5'>
+        <div class="col-md-4 blur_bg">
+          <a href='{% url "renew:improvement" %}'>
+            <div class="card_bg" id='improvement'>
+              <h2 class='h2_card_bg  py-3 blur_bg  black'>БЛАГОУСТРОЙСТВО</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href='{% url "renew:projection" %}'>
+            <div class="card_bg" id='projection'>
+              <h2 class='h2_card_bg py-3 blur_bg black'>ПРОЕКТИРОВАНИЕ</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href='{% url "renew:screening" %}'>
+            <div class="card_bg" id='screening'>
+              <h2 class='h2_card_bg py-3 blur_bg black'>ОБСЛЕДОВАНИЕ</h2>
+            </div>
+          </a>
+        </div>
+      </div> 
 
-    <h2 class='black h2index mt-5 pb-2'>Услуги</h2>
-        <p>
 
 
+    <h2 class='black h2index mt-5 pb-2'>География объектов</h2>
+    <h4 class='we_300 pb-4'>Более 100 проектов в десятках городов и населенных пунктов</h4>
 
+    <div class='row py-5'>
 
+      <div class='col'>
+        <img class='infogr_icon mb-2' src="{% static 'img/icons/public_house.png' %}">
+        <p class='we_300'>Общественые здания
+      </div>
+
+      <div class='col'>
+        <img class='infogr_icon mb-2' src="{% static 'img/icons/house.png' %}">
+        <p class='we_300'>Многоквартирные дома
+      </div>
+
+      <div class='col'>
+        <img class='infogr_icon mb-2' src="{% static 'img/icons/park.png' %}">
+        <p class='we_300'>Парки и набережные
+      </div>
+
+      <div class='col'>
+        <img class='infogr_icon mb-2' src="{% static 'img/icons/public_space.png' %}">
+        <p class='we_300'>Общественные пространства
+      </div>
+    </div>
 
   </section>
+</div>
+
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4da30953424426066865b523b35cc234203676fb3747fd2ef0df3d7a1dcd712d&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=true"></script>
+    
+  <div class='container'>
+
 
 
   <section id='team' class='my-5'>
 
-    <div class='row'>
+    <div class='row px-3'>
       <div class='col-md'>
-        <h2 class='black h2index'>Команда</h2>
+        <div class="card_bg" id='team_pattern'>
+              <h2 class='h2_card_bg py-3 white'>Команда</h2>
+            </div>
       </div>
       <div class='col-md'>
           <img src="{% static 'img/team/mavlutov.webp' %}" class=" team_photo">
@@ -98,7 +120,7 @@
           <p class='role'>Главный архитектор
       </div>
     </div>
-    <div class='row pt-4'>
+    <div class='row px-3 pt-4'>
       <div class='col-md '>
           <img src="{% static 'img/team/Yagofarov.png' %}" class="team_photo">
           <h4>Ягофаров Динар Шамилевич</h4>
@@ -123,19 +145,29 @@
     <h2 class='black h2index'>Партнеры</h2>
 
     <div class='d-flex justify-content-between my-5'>
-      <img src="{% static 'img/partners/logo-part-1.png' %}" class="partners_rect">
-      <img src="{% static 'img/partners/logo-part-2.png' %}" class="partners">
-      <img src="{% static 'img/partners/logo-part-3.png' %}" class="partners">
-      <img src="{% static 'img/partners/logo-part-4.png' %}" class="partners_rect">
-
+      <img class='partner_logo img-fluid' src="{% static 'img/partners/logo-part-1.png' %}" class="partners_rect">
+      <img class='partner_logo img-fluid' src="{% static 'img/partners/logo-part-2.png' %}" class="partners">
+      <img class='partner_logo img-fluid' src="{% static 'img/partners/logo-part-3.png' %}" class="partners">
+      <img class='partner_logo img-fluid' src="{% static 'img/partners/logo-part-4.png' %}" class="partners_rect">
     </div>
   </section>
+
 </div>
 
 
 <section id='contact' class=''>
-  <div class='map_wrapper'>
+  <div class='map_wrapper d-none d-lg-block d-xl-block d-xxl-block'>
     <div class='blur_bg_contact info_rect'>
+      <h2 class=' black h2index pb-4'>Контакты</h2>
+      <div class="d-flex justify-content-start pb-2"><img class='icon' src="{% static 'img/icons/phone.gif' %}"><p class='ps-2 pt-1'>+7 917 245 42 25</p></div>
+      <div class="d-flex justify-content-start pb-2"><img class='icon' src="{% static 'img/icons/email.png' %}"><p class='ps-2 pt-1'>renovation-rf@mail.ru</p></div>
+      <div class="d-flex justify-content-start"><img class='icon' src="{% static 'img/icons/address.png' %}"><p class='ps-2 pt-2'>Казань, Декабристов 81Б, каб.207</p></div>
+    </div>
+  </div>
+
+
+  <div class='d-block d-lg-none'>
+    <div class='blue_bg px-3 py-5'>
       <h2 class=' black h2index pb-4'>Контакты</h2>
       <div class="d-flex justify-content-start pb-2"><img class='icon' src="{% static 'img/icons/phone.gif' %}"><p class='ps-2 pt-1'>+7 917 245 42 25</p></div>
       <div class="d-flex justify-content-start pb-2"><img class='icon' src="{% static 'img/icons/email.png' %}"><p class='ps-2 pt-1'>renovation-rf@mail.ru</p></div>
