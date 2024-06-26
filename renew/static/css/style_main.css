@@ -191,6 +191,7 @@ hr{
   text-align: center;
   max-width: 14em;
   padding: .7em 1em;
+  background-color: rgba(121,183,238, .8);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .button_dark{
@@ -266,12 +267,12 @@ hr{
   padding: 5em 0 0 14em;
 }
 .info_rect{
-  background-color: rgba(121,183,238, .4);
+  background-color: rgba(255,255,255, .4);
   width: 22em;
-  padding: 3em 1.5em;
+  padding: 1.5em 3em;
   font-size: 1.2em;
   font-weight: 300;
-  margin-bottom: -22em;
+  margin-bottom: -24em;
   position: relative;
   z-index: 999;
 }
@@ -310,6 +311,9 @@ hr{
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5)!important;
 }
+
+
+
 
 
 /* DESCTOP */
@@ -367,7 +371,28 @@ hr{
   }
 
 
+  .callme_container{
+    margin-top: 7em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+  }
+  .close {
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 60px;
+    font-weight: 100;
+    transition: 0.3s;
+    z-index: 2;
+  }
+
+
 }
+
+
+
   /* PHONE */
   @media (max-width: 810px) {
 
@@ -385,7 +410,7 @@ hr{
     overflow: hidden;
   }
   .h1_header{
-    margin-top: 8em;
+    margin-top: 12em;
     padding-bottom: 6em;
   }
 
@@ -429,8 +454,27 @@ hr{
     max-height: 2.2em
   }
 
+  .callme_container{
+    /*margin-top: 4em;*/
+    width: 100vw;
+  }
+  .close {
+    color: #fff;
+    position: absolute;
+    top: -25px;
+    left: 15px;
+    font-size: 80px;
+    font-weight: 100;
+    transition: 0.3s;
+    z-index: 2;
+  }
+
 
 }
+
+
+
+
 
 .mob_header_img{
   margin-top: -4.5em;
@@ -451,23 +495,7 @@ hr{
     display: block;      
   
 
-.close {
-  color: #fff;
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-  z-index: 2;
-}
 
-.callme_container{
-  margin-top: 7em;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20em;
-}
 .form_container{
   padding: 2em 2em 1em 2em;
 
