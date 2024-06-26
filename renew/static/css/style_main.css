@@ -103,7 +103,11 @@ hr{
     backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
 }
-
+.center{
+  text-align: center;
+  margin-right: auto!important;
+  margin-left: auto!important;
+}
 
 
 .nav-link{
@@ -177,11 +181,18 @@ hr{
   border-radius: 8px;
   text-align: center;
   max-width: 18em;
-  padding: 1.2em;
+  padding: 1.1em 1em 1em 1em;
   background-color: rgba(121,183,238, .8);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+.button_form_base{
+  border-radius: 8px;
+  text-align: center;
+  max-width: 14em;
+  padding: .7em 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .button_dark{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #f3f8fd;
@@ -208,6 +219,7 @@ hr{
 }
 
 
+
 .h2_card_bg{
   font-weight: 300;
   margin-right: auto;
@@ -217,7 +229,6 @@ hr{
 .card_bg{
   padding-top: 10em;
   padding-bottom: 10em;
-
   width: 100%;
 }
 
@@ -242,8 +253,8 @@ hr{
 }
 
 #team_pattern{
-  background-image: url(http://127.0.0.1:8000/static/img/gif/many_angle.webp);
-  background-size: 96% auto;
+  background-image: url(http://127.0.0.1:8000/static/img/gif/kanat.webp);
+  background-size: 70% auto;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -314,6 +325,17 @@ hr{
     padding-bottom: 6em;
   }
 
+  .footer_brand{
+      font-weight: 100;
+      font-size: 8em;
+      padding: 0 0 0 .3em;
+    }
+    .footer_logo{
+      height: 10em;
+    }
+
+
+
   .art_container {
     display: grid;
     grid-gap: 20px;
@@ -337,101 +359,108 @@ hr{
     padding-top: .6em;
   }
 
-    .thumb{
-      width: 100%;
-    }
-
-    .partner_logo{
-      max-height: 5em
-    }
-
-
+  .thumb{
+    width: 100%;
   }
+  .partner_logo{
+    max-height: 5em
+  }
+
+
+}
   /* PHONE */
   @media (max-width: 810px) {
 
-    .video_header {
-      margin-top: -10em;
-      position: relative;
-      z-index: -999;
-      width: auto;
-      height: 110vh;
-      object-fit: cover;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      overflow: hidden;
-    }
-    .h1_header{
-      margin-top: 8em;
-      padding-bottom: 6em;
-    }
-
-
-    .art_container {
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      width: 96%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .full_img{
-      width: 20em;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .brand_aik {
-      font-size: 1.2em!important;
-      font-weight: 300;
-      padding-top: .6em;
-    }
-
-    .thumb{
-      width: 90%;
-    }
-
-    .partner_logo{
-      max-height: 2.2em
-    }
-
-
-  }
-
-  .mob_header_img{
-    margin-top: -4.5em;
-  }
-
-  .modal_container{
-    /*height: 10em;*/
-  }
-  .thumb {
-    display: block;
-   }
-
-  .hide {
-      display: none;
-  }
-
-  .block {
-      display: block;      
-    
-
-  .close {
-    color: #fff;
+  .video_header {
+    margin-top: -10em;
+    position: relative;
+    z-index: -999;
+    width: auto;
+    height: 110vh;
+    object-fit: cover;
     position: absolute;
-    top: 15px;
-    right: 35px;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
   }
+  .h1_header{
+    margin-top: 8em;
+    padding-bottom: 6em;
+  }
+
+  .footer_brand{
+    font-weight: 300;
+    font-size: 2.5em;
+    padding: .5em;
+  }
+  .footer_logo{
+    height: 5em;
+  }
+
+  .art_container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .full_img{
+    width: 20em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .brand_aik {
+    font-size: 1.2em!important;
+    font-weight: 300;
+    padding-top: .6em;
+  }
+
+  .thumb{
+    width: 90%;
+  }
+
+  .partner_logo{
+    max-height: 2.2em
+  }
+
+
+}
+
+.mob_header_img{
+  margin-top: -4.5em;
+}
+
+.modal_container{
+  /*height: 10em;*/
+}
+.thumb {
+  display: block;
+ }
+
+.hide {
+    display: none;
+}
+
+.block {
+    display: block;      
+  
+
+.close {
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  z-index: 2;
+}
 
 .callme_container{
   margin-top: 7em;

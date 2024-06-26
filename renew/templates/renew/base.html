@@ -44,7 +44,7 @@
             <p class="head_mail">renovation-rf@mail.ru</p>
           </div>
           <div class=''>
-            <a href='#'><div class='button_form mt-3 mx-3 black'>Получить консультацию</div></a>
+            {% include 'renew/form_popup_base.html' %}
           </div>
         </div>
       </div>
@@ -125,56 +125,71 @@
 {% endblock %}
 
 
-<footer class='py-4 gray gray_dark_bg'>
-  <div class="container-fluid">
-    <div class="row pt-2 pb-4">
-      
-      <div class='col-md-1 pe-3'>
-        <a class="" href='{% url "renew:index" %}'>   
-          <img class='pt-1' src='{% static "logo_gray.svg" %}'>
+<footer class='py-4 white gray_dark_bg'>
+
+  <div class="container">
+    <div class="row px-4 pt-3 pb-4">
+
+      <div class='col-md-3 pb-5'>
+
+        <a class="" href='{% url "renew:index" %}'>
+          <div class="center">
+            <img class='footer_logo center' src='{% static "logo_gray.svg" %}'>
+          </div>
         </a>
       </div>
 
-
-      <div class='col-md-4'>
+      <div class='col-md-3 pb-5'>
         <h3 class='we_300 pb-4 h3_footer'>О НАС</h3>
-
-        <div class='row'>
-          <div class='col-md-2'>
-            <a class="nav_footer" href='#'><p>Новости</p></a>
-            <a class="nav_footer" href='{% url "renew:index" %}#about'><p>О&nbsp;компании</p></a>
-          </div>
-          <div class='col-md-1'>
-              <a class="nav_footer" href='{% url "renew:index" %}#team'><p>Команда</p></a>
-              <a class="nav_footer" href='{% url "renew:index" %}#partners'><p>Партнеры</p></a>
-          </div>
-        </div> 
+        <a class="nav_footer" href='#'><p>Новости</p></a>
+        <a class="nav_footer" href='{% url "renew:index" %}#about'><p>О&nbsp;компании</p></a>
+        <a class="nav_footer" href='{% url "renew:index" %}#geography'><p>География проектов</p></a>
+        <a class="nav_footer" href='{% url "renew:index" %}#team'><p>Команда</p></a>
+        <a class="nav_footer" href='{% url "renew:index" %}#partners'><p>Партнеры</p></a>
       </div>
 
-      <div class='col-md'>
-        <!-- <h3 class='we_300 pb-4 h3_footer'>УСЛУГИ</h3>
+      <div class='col-md-3 pb-5'>
+        <h3 class='we_300 pb-4 h3_footer'>УСЛУГИ</h3>
         <a class="nav_footer" href='{% url "renew:improvement" %}'><p>Благоустройство</a>
         <a class="nav_footer" href='{% url "renew:projection" %}'><p>Проектирование</a>
-        <a class="nav_footer" href='{% url "renew:screening" %}'><p>Обследование</a>  -->
+        <a class="nav_footer" href='{% url "renew:screening" %}'><p>Обследование</a>
       </div>
              
 
-      <div class='col-md-2'>
+      <div class='col-md-3'>
         <h3 class='we_300 pb-4 h3_footer'>КОНТАКТЫ</h3>
         <p class='pb-3 nav_footer'>+7 917 245 42 25</p>
         <p class='pb-3 nav_footer'>renovation-rf@mail.ru</p>
         <p class='pb-3 nav_footer'>Казань, Декабристов 81Б, каб.207</p>
+
+        <div class="d-flex justify-content-start">
+          <a  href='#'><img class='smm_head py-2 ps-2' src='{% static "img/icons/vk_gray.png" %}'></a>
+          <a  href='#'><img class='smm_head py-2 pe-2 ms-4' src='{% static "img/icons/inst_gray.png" %}'></a>
+        </div>
+
+
       </div>
 
     </div>
+
+<!--     <div class='py-5 pe-3'>
+      <a class="" href='{% url "renew:index" %}'>   
+        <div class="d-flex justify-content-center">
+          <img class='footer_logo ms-4' src='{% static "logo_gray.svg" %}'>
+          <div>
+            <h2 class='gray footer_brand'>РЕНОВАЦИЯ</h2>
+            
+          </div>
+        </div>          
+      </a>
+    </div>
+ -->
   </div>
   
 
 
-  <center class='mt-2 small we_300'>
-    
+  <center class='mt-5 gray container small we_300'>  
   © 2024, АИК ООО «Реновация». Все права защищены.
-
   </center>
 
 </footer>
