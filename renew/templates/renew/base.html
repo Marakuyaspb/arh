@@ -19,8 +19,8 @@
 
 <header>
 <!-- DESCTOP -->
-<div class='blur_bg d-none d-lg-block d-xl-block d-xxl-block '>
-    <div class="container-fluid">
+<div class='d-none d-lg-block d-xl-block d-xxl-block'>
+    <div class="menu_desctop container-fluid">
       
       <div class="d-flex justify-content-between">
         <div>
@@ -41,9 +41,11 @@
             <p class="head_phone">+7 (917) 245-42-25</p>
             <p class="head_mail">renovation-rf@mail.ru</p>
           </div>
-          <div class=''>
+
+           <div class='modal_container' onclick='showModal(this);'>
             {% include 'renew/form_popup_base.html' %}
           </div>
+
         </div>
       </div>
 

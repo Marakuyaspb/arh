@@ -152,6 +152,10 @@ hr{
   padding: 0em .5em .5em .5em;
   margin-bottom: 0!important
 }
+.mob_header_img{
+  margin-top: -4.5em;
+}
+
 .btn_consult{
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -169,7 +173,11 @@ hr{
 #menu{
   margin-top: -1.4em;
 }
-
+.menu_desctop{
+  position: absolute;
+  z-index: 3;
+  background: rgba(255,255,255, .4);
+}
 .infogr_icon{
   height: 5em;
   margin-right: auto;
@@ -260,8 +268,13 @@ hr{
   background-position: center;
 }
 
-
-
+.slider_h1{
+  padding-top: 2.5em;
+}
+.after_head{
+  position: relative;
+  padding-top: 44em;
+}
 
 .map_wrapper{
   padding: 5em 0 0 14em;
@@ -279,6 +292,10 @@ hr{
 .icon{
   width: 2em;
   height: 2em;
+}
+.so_big{
+  font-size: 8em;
+  line-height: .5em;
 }
 .small{
   font-size: .8em;
@@ -299,21 +316,10 @@ hr{
 
 
 
-/*  MODAL WINDOW  */
-.modal_full{
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5)!important;
-}
 
 
-
+ 
+/**//**//**//**//**//**/  
 
 
 /* DESCTOP */
@@ -330,13 +336,13 @@ hr{
   }
 
   .footer_brand{
-      font-weight: 100;
-      font-size: 8em;
-      padding: 0 0 0 .3em;
-    }
-    .footer_logo{
-      height: 10em;
-    }
+    font-weight: 100;
+    font-size: 8em;
+    padding: 0 0 0 .3em;
+  }
+  .footer_logo{
+    height: 10em;
+  }
 
 
 
@@ -392,9 +398,11 @@ hr{
 }
 
 
+/**//**//**//**//**//**/  
 
-  /* PHONE */
-  @media (max-width: 810px) {
+
+/* PHONE */
+@media (max-width: 810px) {
 
   .video_header {
     margin-top: -10em;
@@ -473,16 +481,39 @@ hr{
 }
 
 
+/**//**//**//**//**//**/  
+
+
+ 
 
 
 
-.mob_header_img{
-  margin-top: -4.5em;
+
+
+/*  MODAL WINDOW  */
+.modal_full{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5)!important;
 }
 
 .modal_container{
   /*height: 10em;*/
 }
+
+.form_container{
+  padding: 2em 2em 1em 2em;
+
+}
+
+
+
 .thumb {
   display: block;
  }
@@ -495,9 +526,4 @@ hr{
     display: block;      
   
 
-
-.form_container{
-  padding: 2em 2em 1em 2em;
-
-}
 

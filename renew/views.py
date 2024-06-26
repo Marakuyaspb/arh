@@ -20,6 +20,8 @@ from django.core.mail import send_mail, send_mass_mail
 
 def error_404_view(request, exception):
 	return render(request, 'renew/404.html', status=404)
+def privacy(request):
+	return render(request, 'renew/privacy.html', context)
 
 def index(request):
 	if request.method == 'POST':
@@ -38,13 +40,48 @@ def index(request):
 
 
 def improvement(request):
-	return render(request, 'renew/improvement.html')
-def privacy(request):
-	return render(request, 'renew/privacy.html')
+	if request.method == 'POST':
+		callme_form = CallMeForm(request.POST)
+		if callme_form.is_valid():
+			callme = callme_form.save()
+			send_email_task.delay(callme.first_name)
+	else:
+		callme_form = CallMeForm()
+
+	context = {
+		'callme_form': callme_form
+	}
+	return render(request, 'renew/improvement.html', context)
+
+
 def projection(request):
-	return render(request, 'renew/projection.html')	
+	if request.method == 'POST':
+		callme_form = CallMeForm(request.POST)
+		if callme_form.is_valid():
+			callme = callme_form.save()
+			send_email_task.delay(callme.first_name)
+	else:
+		callme_form = CallMeForm()
+
+	context = {
+		'callme_form': callme_form
+	}
+	return render(request, 'renew/projection.html', context)
+
+
 def screening(request):
-	return render(request, 'renew/screening.html')
+	if request.method == 'POST':
+		callme_form = CallMeForm(request.POST)
+		if callme_form.is_valid():
+			callme = callme_form.save()
+			send_email_task.delay(callme.first_name)
+	else:
+		callme_form = CallMeForm()
+
+	context = {
+		'callme_form': callme_form
+	}
+	return render(request, 'renew/screening.html', context)
 
 
 def case(request, product_slug=None):
