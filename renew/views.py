@@ -40,6 +40,9 @@ def index(request):
 
 
 def improvement(request):
+	cases = Case.objects.filter(category_id=1)
+	print(cases)
+
 	if request.method == 'POST':
 		callme_form = CallMeForm(request.POST)
 		if callme_form.is_valid():
@@ -49,7 +52,8 @@ def improvement(request):
 		callme_form = CallMeForm()
 
 	context = {
-		'callme_form': callme_form
+		'callme_form': callme_form,
+		'cases' : cases,
 	}
 	return render(request, 'renew/improvement.html', context)
 
@@ -84,7 +88,13 @@ def screening(request):
 	return render(request, 'renew/screening.html', context)
 
 
-def case(request, product_slug=None):
+
+def the_case(request, category=None, id=None):		
+	if id:
+		the_case = get_object_or_404(Case, id=id)
+		similar_cases = Case.objects.filter(category=the_case.category)
+
+
 	if request.method == 'POST':
 		callme_form = CallMeForm(request.POST)
 		if callme_form.is_valid():
@@ -94,28 +104,16 @@ def case(request, product_slug=None):
 		callme_form = CallMeForm()
 
 	context = {
+		'the_case': the_case,
+		'similar_cases': similar_cases,
 		'callme_form': callme_form
 	}
-
-
-
-	if id:
-		case = get_object_or_404(Case, id=id)
-		similar_cases = Case.objects.filter(category=case.category)
-
-		return render(request, 'renew/the_case.html', {
-			'case': case,
-			'similar_cases': similar_cases,
-			'callme_form': callme_form
-			}
-		)
+	return render(request, 'renew/the_case.html', context)
 
 
 
 # MAIL
 logging.basicConfig(filename='mail_log.txt', level=logging.INFO, format='%(asctime)s - %(message)s')
-
-
 
 def new_callme(request):
 	if request.method == 'POST':

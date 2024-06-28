@@ -233,3 +233,2110 @@ kombu.exceptions.OperationalError: [Errno 111] Connection refused
 2024-06-26 16:22:51,498 - Not Found: /favicon.ico
 2024-06-26 16:23:39,536 - Not Found: /favicon.ico
 2024-06-26 17:39:59,578 - Not Found: /products/
+2024-06-27 09:30:47,256 - Not Found: /favicon.ico
+2024-06-27 09:34:23,282 - /home/a/ar/renew/admin.py changed, reloading.
+2024-06-27 09:34:27,625 - /home/a/ar/renew/admin.py changed, reloading.
+2024-06-27 09:35:05,631 - /home/a/ar/renew/models.py changed, reloading.
+2024-06-27 09:35:34,586 - /home/a/ar/renew/admin.py changed, reloading.
+2024-06-27 09:42:47,354 - /home/a/ar/renew/admin.py changed, reloading.
+2024-06-27 09:45:43,495 - /home/a/ar/renew/models.py changed, reloading.
+2024-06-27 09:48:19,124 - /home/a/ar/renew/admin.py changed, reloading.
+2024-06-27 09:48:53,124 - /home/a/ar/renew/admin.py changed, reloading.
+2024-06-27 12:38:43,708 - /home/a/ar/renew/models.py changed, reloading.
+2024-06-27 12:38:53,145 - /home/a/ar/renew/models.py changed, reloading.
+2024-06-27 12:44:55,917 - /home/a/ar/renew/models.py changed, reloading.
+2024-06-27 12:45:17,695 - Not Found: /favicon.ico
+2024-06-27 16:25:33,178 - Not Found: /products/
+2024-06-27 16:26:05,907 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-27 16:26:41,804 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-27 16:26:50,296 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-27 16:26:54,790 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    cases = Case.objects.filter('improvement')
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1404, in build_filter
+    arg, value = filter_expr
+ValueError: too many values to unpack (expected 2)
+2024-06-27 16:27:07,085 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-27 16:27:13,503 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    cases = Case.objects.filter(1)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1404, in build_filter
+    arg, value = filter_expr
+TypeError: cannot unpack non-iterable int object
+2024-06-27 16:27:21,746 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-27 16:27:25,144 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    cases = Case.objects.filter('1')
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1421, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1439, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1446, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1404, in build_filter
+    arg, value = filter_expr
+ValueError: not enough values to unpack (expected 2, got 1)
+2024-06-27 16:31:10,555 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-27 16:31:43,333 - /home/a/ar/renew/models.py changed, reloading.
+2024-06-27 16:35:54,438 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-27 16:36:12,042 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-27 16:36:13,525 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 16:50:56,198 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 35: 'media', expected 'endblock'. Did you forget to register or load this tag?
+2024-06-27 16:51:36,410 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 16:51:36,517 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 16:52:08,480 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 16:53:15,487 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 16:54:32,886 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 16:57:39,546 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 16:58:15,882 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 16:58:15,963 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 16:58:29,465 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 16:58:29,562 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 16:58:48,092 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 16:58:55,178 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:00:00,116 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:02:01,886 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:08:10,208 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:08:20,542 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:09:03,775 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:09:49,551 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:11:12,663 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:11:12,785 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:12:16,034 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:14:11,168 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:15:00,332 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:15:39,214 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:16:15,495 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:16:33,478 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:19:52,251 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:19:58,881 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:19:58,991 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:20:02,799 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:21:29,407 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:21:29,536 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:21:36,539 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:22:17,158 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:22:39,018 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:22:53,357 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:23:15,464 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:23:16,599 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:23:34,309 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:24:00,591 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:24:13,590 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:25:08,218 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:25:55,044 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:26:01,839 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:26:23,381 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:26:48,845 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:32:24,406 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:32:47,751 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:32:58,917 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:34:06,795 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:34:08,060 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:34:14,871 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:34:22,376 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:35:04,402 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:35:33,299 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:35:46,009 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:37:00,693 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:37:07,585 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:37:07,679 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:38:18,261 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:38:35,141 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:38:35,258 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:38:43,051 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:40:17,674 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:40:17,788 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:40:33,286 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:40:33,900 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:40:33,994 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:40:58,155 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:41:49,440 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:43:54,378 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:44:54,296 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:45:14,858 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:45:23,887 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:45:34,623 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:45:46,316 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:45:55,587 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:46:05,471 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:46:05,585 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:46:14,477 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:46:14,626 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:46:23,564 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:46:23,666 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:46:41,045 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:46:51,177 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:47:01,190 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:47:01,285 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:47:27,801 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:47:27,918 - Not Found: /media/case_headers/1
+.jpg
+2024-06-27 17:51:12,211 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-27 17:56:45,627 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-27 17:56:45,814 - Not Found: /favicon.ico
+2024-06-27 17:58:18,077 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-27 17:58:23,408 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-27 17:58:23,668 - Not Found: /favicon.ico
+2024-06-27 18:00:03,978 - /home/a/ar/renew/urls.py changed, reloading.
+2024-06-27 18:00:07,455 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-27 18:00:07,681 - Not Found: /favicon.ico
+2024-06-27 18:00:09,901 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-27 18:00:17,828 - /home/a/ar/renew/urls.py changed, reloading.
+2024-06-27 18:00:20,395 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-27 18:00:20,620 - Not Found: /favicon.ico
+2024-06-27 18:00:36,390 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-27 18:00:36,583 - Not Found: /favicon.ico
+2024-06-27 18:00:45,754 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-27 18:00:45,975 - Not Found: /favicon.ico
+2024-06-27 19:35:27,002 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-28 07:12:15,954 - Internal Server Error: /1/1/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 112, in case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 11: 'media', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2024-06-28 07:13:58,286 - Internal Server Error: /1/1/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 112, in case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'media' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2024-06-28 07:14:04,408 - Internal Server Error: /1/1/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 112, in case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'media' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2024-06-28 07:15:05,144 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'media' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2024-06-28 07:15:05,296 - Not Found: /favicon.ico
+2024-06-28 07:15:17,907 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-28 07:15:18,087 - Not Found: /favicon.ico
+2024-06-28 07:16:13,971 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-28 07:16:53,960 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-28 07:17:02,427 - /home/a/ar/renew/urls.py changed, reloading.
+2024-06-28 07:17:05,936 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-28 07:17:08,806 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-28 07:17:08,967 - Not Found: /favicon.ico
+2024-06-28 07:17:34,150 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-28 07:17:34,271 - Not Found: /favicon.ico
+2024-06-28 07:18:06,638 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-28 07:18:06,810 - Not Found: /favicon.ico
+2024-06-28 07:18:07,618 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 828, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'case' not found. 'case' is not a valid view function or pattern name.
+2024-06-28 07:18:28,626 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'case'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'case' is not a registered namespace
+2024-06-28 07:18:28,788 - Not Found: /favicon.ico
+2024-06-28 07:19:00,601 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'case'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'case' is not a registered namespace
+2024-06-28 07:19:00,736 - Not Found: /favicon.ico
+2024-06-28 07:19:43,774 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-28 07:20:06,445 - /home/a/ar/renew/urls.py changed, reloading.
+2024-06-28 07:20:10,680 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'case'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'case' is not a registered namespace
+2024-06-28 07:20:33,419 - Internal Server Error: /1/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 96, in the_case
+    similar_cases = Case.objects.filter(category=case.category)
+NameError: name 'case' is not defined
+2024-06-28 07:20:38,426 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'case'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'case' is not a registered namespace
+2024-06-28 07:21:01,998 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'the_case'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 59, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'the_case' is not a registered namespace
+2024-06-28 07:26:15,279 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 07:26:38,777 - Internal Server Error: /1/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 96, in the_case
+    similar_cases = Case.objects.filter(category=case.category)
+NameError: name 'case' is not defined
+2024-06-28 07:27:09,073 - /home/a/ar/renew/urls.py changed, reloading.
+2024-06-28 07:27:16,630 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-28 07:27:52,062 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 58, in improvement
+    return render(request, 'renew/improvement.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 238, in render
+    nodelist.append(node.render_annotated(context))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/urls/resolvers.py", line 743, in _reverse_with_prefix
+    raise ValueError("Don't mix *args and **kwargs in call to reverse()!")
+ValueError: Don't mix *args and **kwargs in call to reverse()!
+2024-06-28 07:28:07,856 - /home/a/ar/renew/urls.py changed, reloading.
+2024-06-28 07:28:10,119 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 07:28:42,249 - Internal Server Error: /4/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 95, in the_case
+    similar_cases = Case.objects.filter(category=case.category)
+NameError: name 'case' is not defined
+2024-06-28 07:29:25,530 - /home/a/ar/renew/urls.py changed, reloading.
+2024-06-28 07:32:57,534 - Not Found: /8/
+2024-06-28 07:34:24,344 - /home/a/ar/renew/urls.py changed, reloading.
+2024-06-28 07:34:27,309 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 07:34:27,388 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 07:34:36,225 - Internal Server Error: /improvement/1/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: the_case() got an unexpected keyword argument 'category'
+2024-06-28 07:34:45,388 - Internal Server Error: /improvement/4/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: the_case() got an unexpected keyword argument 'category'
+2024-06-28 07:35:46,119 - /home/a/ar/renew/urls.py changed, reloading.
+2024-06-28 07:35:48,451 - /home/a/ar/renew/models.py changed, reloading.
+2024-06-28 07:36:04,891 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 07:36:04,990 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 07:36:06,034 - Internal Server Error: /improvement/2/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: the_case() got an unexpected keyword argument 'category'
+2024-06-28 07:36:42,845 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-28 07:36:46,019 - Internal Server Error: /improvement/3/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 95, in the_case
+    similar_cases = Case.objects.filter(category=case.category)
+NameError: name 'case' is not defined
+2024-06-28 07:37:08,818 - /home/a/ar/renew/views.py changed, reloading.
+2024-06-28 07:37:10,579 - Internal Server Error: /improvement/3/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 111, in the_case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 12: 'media', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2024-06-28 07:37:44,685 - Internal Server Error: /improvement/3/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 111, in the_case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'media' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2024-06-28 07:37:48,022 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 07:37:48,105 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 07:37:49,009 - Internal Server Error: /improvement/8/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 111, in the_case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'media' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2024-06-28 07:37:54,829 - Internal Server Error: /improvement/8/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 111, in the_case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 11: 'media', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2024-06-28 07:37:54,988 - Not Found: /favicon.ico
+2024-06-28 07:38:11,909 - Internal Server Error: /improvement/8/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 111, in the_case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: 'media', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2024-06-28 07:38:14,148 - Internal Server Error: /improvement/8/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 111, in the_case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: 'media', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2024-06-28 07:38:17,586 - Internal Server Error: /improvement/8/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 111, in the_case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 953, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: 'media', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
+2024-06-28 07:38:17,720 - Not Found: /favicon.ico

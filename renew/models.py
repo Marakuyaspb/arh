@@ -19,28 +19,30 @@ class Category(models.Model):
 class Case(models.Model):
 	id = models.AutoField(primary_key=True)
 	category = models.ForeignKey(Category,
-		related_name='cases',
+		related_name='categories',
 		on_delete=models.CASCADE, verbose_name = 'Категория')
 	name = models.CharField(max_length=250, null=True, blank=True, verbose_name = 'Полное название объекта')
-	main_img = models.ImageField(upload_to='case_headers/', verbose_name = 'Фото в шапку страницы')
-	main_video = models.ImageField(upload_to='case_headers/', verbose_name = 'Видео в шапку страницы')
+	main_img = models.ImageField(upload_to='case_headers/', null=True, blank=True, verbose_name = 'Фото в шапку страницы')
+	main_video = models.ImageField(upload_to='case_headers/', null=True, blank=True, verbose_name = 'Видео в шапку страницы')
 
 	address = models.CharField(max_length=150, null=True, blank=True, verbose_name = 'Адрес')
 	customer = models.CharField(max_length=250, null=True, blank=True, verbose_name = 'Заказчик')
 	performer = models.CharField(max_length=150, null=True, blank=True, verbose_name = 'Исполнитель', default='АИК «Реновация»')
 	architector = models.CharField(max_length=300, null=True, blank=True, verbose_name = 'Архитектор')
+	engeneer = models.CharField(max_length=300, null=True, blank=True, verbose_name = 'Инженер')
 	square = models.CharField(max_length=30, null=True, blank=True, verbose_name = 'Площадь (только цифры)')
 	year = models.CharField(max_length=250, null=True, blank=True, verbose_name = 'Год')
+
+	realize_text = models.TextField(max_length=2500, null=True, blank=True, verbose_name = 'Текст о Реализации')
+	visualization_text = models.TextField(max_length=2500, null=True, blank=True, verbose_name = 'Текст о Визуализации')
+	analisys_text = models.TextField(max_length=2500, null=True, blank=True, verbose_name = 'Текст о Градостроительном анализе')
+	concept_text = models.TextField(max_length=2500, null=True, blank=True, verbose_name = 'Текст о Концепции')
 
 	realize_img = models.CharField(max_length=250, null=True, blank=True, verbose_name = 'Путь в директорию Реализация')
 	visualization_img = models.CharField(max_length=250, null=True, blank=True, verbose_name = 'Путь в директорию Визуализация')
 	analisys_img = models.CharField(max_length=250, null=True, blank=True, verbose_name = 'Путь в директорию Градостроительный анализ')
 	concept_img = models.CharField(max_length=250, null=True, blank=True, verbose_name = 'Путь в директорию Концепция')
 
-	realize_text = models.TextField(max_length=250, null=True, blank=True, verbose_name = 'Текст о Реализации')
-	visualization_img = models.TextField(max_length=250, null=True, blank=True, verbose_name = 'Текст о Визуализации')
-	analisys_img = models.TextField(max_length=250, null=True, blank=True, verbose_name = 'Текст о Градостроительном анализе')
-	concept_img = models.TextField(max_length=250, null=True, blank=True, verbose_name = 'Текст о Концепции')
 
 	class Meta:
 		ordering = ['name']
@@ -62,3 +64,5 @@ class CallMe(models.Model):
 	
 	class Meta:
 		ordering = ['-created']
+		verbose_name = 'Запрос звонка'
+		verbose_name_plural = 'Запросы звонков'

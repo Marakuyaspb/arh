@@ -1,6 +1,7 @@
 {% extends 'renew/base.html' %}
 {% load static %}
 
+
 {% block content %}
 <link rel='stylesheet' href='https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css'>
 <link rel="stylesheet" href='{% static "css/style.css" %}'>
@@ -30,12 +31,16 @@
   .swiper-image-six {
     background-image: url(http://127.0.0.1:8000/static/img/cases/improvement/kondurcha/reality/34.png);
   }
-
 </style>
 
+<img class='img_header'  src='{% static "headers/31.png" %}'>
+  <div class='container h1_header'>
+    <h1 class='we_300 header_name pb-3'>Благоустройство</h1>
+    <h3 class='pt-2 pb-4 we_300'>Продуманные решения для долгожданного обновления</h3>
+     {% include 'renew/form_popup.html' %}
+  </div>
 
 <div class="page-wrap">
-
   <div id="home-slider">
     <div class="swiper-container">
       <div class="swiper-wrapper">
@@ -77,24 +82,23 @@
       <div class="swiper-pagination"></div>
     </div>
   </div>
-
 </div>
 
 
 
-<div class="container after_head">
+<div class="container mt-4">
   <h3 class='black h2index pb-2'>Проекты благоустройства</h3>
   
   
 
   <div class='art_container py-5'>
     {% for case in cases %}
-
-    <div class=''>
-      <img src='{{case.main_img.url}}' class=''>
-      <h2>{{case.name}}</h2>
-    </div>
-
+    <a href="{% url 'renew:case' category=case.category.category id=case.id %}">
+      <div class=''>
+        <img src='{{case.main_img.url}}' class=''>
+        <h2>{{case.name}}</h2>
+      </div>
+    </a>
     {% endfor %}
   </div>
 

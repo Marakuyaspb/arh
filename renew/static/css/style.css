@@ -10,9 +10,9 @@ General Styles
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+/*  position: absolute;
   z-index: 1;
-  margin-top: -12em;
+  margin-top: -12em;*/
 }
 
 /* ====================================
@@ -28,7 +28,7 @@ The Slider
 .swiper-container {
   height: 100%;
   width: 100%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 4px 4px rgba(0, 0, 0, 0.23);
+  /*box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 4px 4px rgba(0, 0, 0, 0.23);*/
 }
 
 

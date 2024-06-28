@@ -3,12 +3,22 @@
 
 {% block content %}
 
+
 <section class=''>
 	<div class=' '>
-	  <!-- <img class="w-100" src="{% media '{{}} %}"> 
+		{% if case.main_img %}
+		<video autoplay loop class='video_header '>
+			<source src="{{ case.main_video.url }}" type="video/mp4">
+  		</video>
+		{% endif %}
+
+		{% if case.main_img %}
+		<img class="w-100" src="{{ case.main_img.url }}">
+		{% endif %}
+
 		{{ case.description|linebreaks }}
-	  -->
 	</div>
+
 	<div class='container'>
 		<h1 class='the_case_header'>Набережная центрального водоема в г. Бугульма</h1>
 		<p class='the_case_info'>Адрес: г. Бугульма, Республика Татарстан</p>
@@ -19,6 +29,7 @@
 		<p class='the_case_info'>Год: 2021</p>
 	</div>
 </section>
+
 <section>
 	<div class='container'>
 		<h2>Реализация</h2>
@@ -45,20 +56,11 @@
 	</div>
 </section>
 
-<section>
-	<div class='modal_container' onclick='showModal(this);'>
-		<div class='thumb button_form'>Получить консультацию</div>
-
-		<div class='modal_full hide'>
-			<span class="close" onclick="closeModal(this);">&times;</span>
-
-			<div class=''>
-				{% include 'renew/form_popup.html' %}
-			</div>
-		</div>
-	</div>
+<section class=''>
+<center>
+{% include 'renew/form_popup.html' %}
+</center>
 </section>
 
-<!-- <script src='{% static "js/modal_form.js" %}'></script> -->
 
 {% endblock %}
