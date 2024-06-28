@@ -6,27 +6,32 @@
 
 <section class=''>
 	<div class=' '>
-		{% if case.main_img %}
+		{% if the_case.main_video %}
 		<video autoplay loop class='video_header '>
-			<source src="{{ case.main_video.url }}" type="video/mp4">
+			<source src="{{ the_case.main_video.url }}" type="video/mp4">
   		</video>
 		{% endif %}
 
-		{% if case.main_img %}
-		<img class="w-100" src="{{ case.main_img.url }}">
+		{% if the_case.main_img %}
+		<img class="w-100" src="{{ the_case.main_img.url }}">
 		{% endif %}
 
-		{{ case.description|linebreaks }}
+		{{ the_case.description|linebreaks }}
 	</div>
 
 	<div class='container'>
-		<h1 class='the_case_header'>Набережная центрального водоема в г. Бугульма</h1>
-		<p class='the_case_info'>Адрес: г. Бугульма, Республика Татарстан</p>
-		<p class='the_case_info'>Заказчик: г. Бугульма</p>
-		<p class='the_case_info'>Проект выполнен: АИК «Реновация» </p>
-		<p class='the_case_info'>Архитектор: Хафизов Павел</p>
-		<p class='the_case_info'>Площадь: 5,7 Га.</p>
-		<p class='the_case_info'>Год: 2021</p>
+		<h1 class='the_case_header'>{{ the_case.name }}</h1>
+		<p class='the_case_info'>Адрес: {{ the_case.address }}</p>
+		<p class='the_case_info'>Заказчик: {{ the_case.customer }}</p>
+		<p class='the_case_info'>Проект выполнен: {{ the_case.performer }} </p>
+		{% if the_case.architector %}
+			<p class='the_case_info'>{{ the_case.architector }}</p>
+		{% endif %}
+		{% if the_case.engeneer %}
+			<p class='the_case_info'>{{ the_case.engeneer }}</p>
+		{% endif %}
+		<p class='the_case_info'>Площадь: {{ the_case.square }}</p>
+		<p class='the_case_info'>Год: {{ the_case.year }}</p>
 	</div>
 </section>
 
@@ -56,7 +61,7 @@
 	</div>
 </section>
 
-<section class=''>
+<section class='call_me_form'>
 <center>
 {% include 'renew/form_popup.html' %}
 </center>

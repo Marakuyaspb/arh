@@ -178,6 +178,12 @@ hr{
 #menu{
   margin-top: -1.4em;
 }
+.menu_mob_list{
+  padding: 5em 0 0 0;
+  margin: 0 0 0 1em;
+  height: 100vh;
+  font-size: 1.1em;
+}
 .menu_desctop{
   position: absolute;
   z-index: 3;
@@ -188,7 +194,10 @@ hr{
   margin-right: auto;
   margin-left: auto;
 }
-
+.menu_icon{
+  width: 1.4em;
+  height: 2em;
+}
 
 .button_form{
   border-radius: 8px;
@@ -321,8 +330,21 @@ hr{
 }
 
 
-
-
+.category_slider{
+  height: 500px;
+  overflow-y: clip;
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 0!important;
+  left: 15%;
+  top: 10%;
+  padding-top: 0rem!important;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: left!important;
+}
 
 
  
@@ -332,7 +354,6 @@ hr{
 /* DESCTOP */
 @media (min-width: 811px){
 
-
   .img_header {
     margin-top: -8em;
     position: relative;
@@ -340,20 +361,23 @@ hr{
     width: 100%;
     height: 120vh;
     overflow-y: clip;
+    opacity: .7;
   }
-
-
   .video_header{
     margin-top: -10em;
     position: relative;
     z-index: -999;
+  }
+  .category_header{
+    margin-top: -40em;
+    padding-bottom: 8em;
   }
   .h1_header{
     margin-top: -30em;
     padding-bottom: 6em;
   }
   .header_name{
-    font-size: 5em;
+    font-size: 6em;
   }
 
   .footer_brand{
@@ -364,7 +388,6 @@ hr{
   .footer_logo{
     height: 10em;
   }
-
 
 
   .art_container {
@@ -430,13 +453,14 @@ hr{
     position: relative;
     z-index: -999;
     width: auto;
-    height: 130vh;
+    height: 110vh;
     object-fit: cover;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+    opacity: .7;
   }
 
   .video_header {
@@ -454,6 +478,10 @@ hr{
   }
   .header_name{
     font-size: 2.5em;
+  }
+  .category_header{
+    margin-top: 12em;
+    padding-bottom: 6em;
   }
 
   .h1_header{

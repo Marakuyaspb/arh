@@ -75,24 +75,26 @@
         <a class="navbar-brand" href='{% url "renew:index" %}'> 
           <div class='d-flex'>   
             <div><img class='logo_mob' src='{% static "logo.svg" %}'></div>
-            <div><h1 class='black brand_aik ms-1'>АИК «Реновация»</h1></div>
+            <div><h1 class='black brand_aik ms-3'>АИК «Реновация»</h1></div>
           </div>
         </a>
     
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="add_bg();">
-        <img class='icon' src="{% static 'img/icons/menu.png' %}">
+        <img class='menu_icon' src="{% static 'img/icons/menu.png' %}">
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
 
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-             <a class="nav-link" href='{% url "renew:index" %}#about'>О Компании</a>
-          </li>
+        <ul class="navbar-nav menu_mob_list">
+
           <li class="nav-item">
             <a class="nav-link" href='#'>Новости</a>
           </li>
+          <li class="nav-item">
+             <a class="nav-link" href='{% url "renew:index" %}#about'>О Компании</a>
+          </li>
+          <li class="nav-item we_300 ms-2 my-2">——————————</li>
           <li class="nav-item">
             <a class="nav-link" href='{% url "renew:improvement" %}'>Благоустройство</a>
           </li>
@@ -102,12 +104,12 @@
           <li class="nav-item">
             <a class="nav-link" href='{% url "renew:screening" %}'>Обследование</a>
           </li>
+
+          <li class="nav-item we_300 ms-2 my-2">——————————</li>
           <li class="nav-item">
             <a class="nav-link" href='{% url "renew:index" %}#team'>Команда</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href='{% url "renew:index" %}#partners'>Партнеры</a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" href='{% url "renew:index" %}#contact'>Контакты</a>
           </li>

@@ -2340,3 +2340,661 @@ Traceback (most recent call last):
     raise self.error(
 django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 16: 'media', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
 2024-06-28 07:38:17,720 - Not Found: /favicon.ico
+2024-06-28 08:32:08,763 - Internal Server Error: /improvement/8/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'ifthe_case.architector'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 111, in the_case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 232, in do_block
+    nodelist = parser.parse(("endblock",))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 558, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'ifthe_case.architector', expected 'endblock'. Did you forget to register or load this tag?
+2024-06-28 08:32:24,840 - Internal Server Error: /improvement/8/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 111, in the_case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'main_video' attribute has no file associated with it.
+2024-06-28 08:34:18,657 - Internal Server Error: /improvement/1/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 880, in _resolve_lookup
+    current = current[bit]
+TypeError: 'ImageFieldFile' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 111, in the_case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1064, in render
+    output = self.filter_expression.resolve(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 715, in resolve
+    obj = self.var.resolve(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 847, in resolve
+    value = self._resolve_lookup(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 890, in _resolve_lookup
+    current = getattr(current, bit)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/fields/files.py", line 65, in url
+    self._require_file()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/fields/files.py", line 40, in _require_file
+    raise ValueError(
+ValueError: The 'main_video' attribute has no file associated with it.
+2024-06-28 08:34:18,874 - Not Found: /favicon.ico
+2024-06-28 08:34:59,076 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:34:59,208 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:37:22,523 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:37:22,605 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:41:31,819 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:41:31,956 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:41:43,582 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:43:06,444 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:43:06,546 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:43:27,825 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:43:27,953 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:43:29,985 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:43:30,042 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:43:31,102 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:43:31,175 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:43:39,253 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:44:01,339 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:44:34,710 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:44:39,401 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:45:55,138 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:47:37,165 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:47:44,347 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:50:06,256 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:50:06,360 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:50:27,407 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:50:27,491 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:51:01,865 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:51:04,887 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:51:39,508 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:51:39,600 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:53:51,419 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:54:18,299 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:54:18,446 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:54:31,496 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:55:02,725 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:55:33,050 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:55:33,131 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:55:38,303 - Not Found: /favicon.ico
+2024-06-28 08:56:44,138 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:56:51,719 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:56:53,030 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:56:53,104 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:58:04,909 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:58:42,742 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:58:42,835 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:58:45,797 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 08:59:20,604 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:00:07,743 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:00:07,836 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:00:21,055 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:00:21,095 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:00:22,232 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:00:22,282 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:00:23,892 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:00:41,066 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:01:11,613 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:01:23,229 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:01:23,329 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:01:33,106 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:01:33,157 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:01:39,120 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:01:39,171 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:01:45,691 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:01:45,741 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:02:09,636 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:02:09,690 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:02:15,558 - Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1026, in find_library
+    return parser.libraries[name]
+KeyError: 'media'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 39, in index
+    return render(request, 'renew/index.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 33, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 293, in do_extends
+    nodelist = parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 513, in parse
+    raise self.error(token, e)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 511, in parse
+    compiled_result = compile_func(self, token)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1088, in load
+    lib = find_library(parser, name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 1028, in find_library
+    raise TemplateSyntaxError(
+django.template.exceptions.TemplateSyntaxError: 'media' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+2024-06-28 09:02:15,706 - Not Found: /favicon.ico
+2024-06-28 09:02:35,743 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:02:35,810 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:02:54,826 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:02:54,916 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:03:43,829 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:03:43,961 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:03:53,290 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:03:53,410 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:05:52,006 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:05:52,107 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:08:39,712 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:08:39,861 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:08:53,752 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:08:53,897 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:10:48,776 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:11:04,712 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:11:04,840 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:12:40,284 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:12:40,400 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:12:41,295 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:12:41,372 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:14:14,379 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:14:14,511 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:14:42,504 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:14:42,606 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:14:54,258 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:14:54,332 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:15:11,626 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:15:11,738 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:15:59,942 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:16:00,032 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:17:09,162 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:17:09,284 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:17:29,215 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:17:29,304 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:17:47,444 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:17:47,508 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:17:56,472 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:17:56,566 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:18:07,192 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:18:07,271 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:19:29,057 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:19:29,139 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:19:49,156 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:19:49,267 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:19:56,787 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:19:56,896 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:20:10,420 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:20:10,503 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:20:31,058 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:20:31,142 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:20:46,037 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:20:46,143 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:20:57,561 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:20:57,666 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:21:07,216 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:21:07,280 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:21:19,644 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:21:21,025 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:21:41,179 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:22:09,836 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:22:13,719 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:22:32,908 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:23:11,240 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:23:34,274 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:23:34,380 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:24:01,810 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:26:13,404 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:26:13,525 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:26:16,327 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:26:16,414 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:26:19,238 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:28:10,710 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:29:10,760 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:29:10,844 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:30:37,021 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:31:04,686 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:31:32,019 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:31:46,008 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:31:46,085 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:31:55,276 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:31:55,380 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:31:56,652 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:31:56,766 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:32:11,514 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:32:11,627 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:32:56,914 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:32:57,021 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:33:18,220 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:33:18,320 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:34:12,937 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:34:13,045 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:37:35,931 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:39:21,353 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:39:31,916 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:40:21,076 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:40:49,952 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:40:50,078 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:41:08,660 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:41:08,776 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:41:21,879 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:41:21,994 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:41:36,700 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:41:36,784 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:41:38,460 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:41:38,526 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:41:43,283 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:42:14,112 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:42:24,067 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:42:38,286 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:42:38,384 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:42:39,684 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:42:39,780 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:42:47,062 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:42:47,158 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:44:03,725 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:44:21,785 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:44:21,913 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:46:50,378 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:46:50,492 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:47:47,884 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:47:47,964 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:47:56,952 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:48:36,729 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:48:37,627 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:48:37,827 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:49:02,666 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:49:02,794 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:49:39,379 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:49:39,471 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:50:13,808 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:50:13,909 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:51:08,726 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:51:20,085 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:51:20,223 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:51:30,149 - Not Found: /media/case_headers/1
+.jpg
+2024-06-28 09:51:30,261 - Not Found: /media/case_headers/1
+.jpg
