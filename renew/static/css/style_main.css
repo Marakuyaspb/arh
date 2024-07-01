@@ -345,13 +345,24 @@ hr{
   color: #fff;
   text-align: left!important;
 }
+.wrap_case_img{
+  background-color: rgb(255,255,255);
+  position: relative;
+  z-index: 3;
+}
 
-
+.case_name{
+  padding: 0 20px 2em 20px;
+  margin: -4.2em 0 0 0;
+  font-weight: 600;
+  font-size: 1.5em;
+}
  
+
 /**//**//**//**//**//**/  
 
 
-/* DESCTOP */
+/*  DESCTOP  */
 @media (min-width: 811px){
 
   .img_header {
@@ -362,6 +373,7 @@ hr{
     height: 120vh;
     overflow-y: clip;
     opacity: .7;
+    object-fit: cover;
   }
   .video_header{
     margin-top: -10em;
@@ -393,11 +405,21 @@ hr{
   .art_container {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     width: 96%;
     margin-left: auto;
     margin-right: auto;
   }
+  .case_prev{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    opacity: .5;
+  }
+  .case_prev:hover{
+    filter: hue-rotate(30deg);
+    opacity: 1;
+   }
 
   .full_img{
     height: 90%;
@@ -445,7 +467,13 @@ hr{
 /**//**//**//**//**//**/  
 
 
-/* PHONE */
+/*  TABLET  */
+
+
+/**//**//**//**//**//**/  
+
+
+/*  PHONE  */
 @media (max-width: 810px) {
 
   .img_header {
@@ -461,6 +489,7 @@ hr{
     transform: translate(-50%, -50%);
     overflow: hidden;
     opacity: .7;
+    object-fit: cover;
   }
 
   .video_header {
@@ -501,11 +530,21 @@ hr{
   .art_container {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     width: 96%;
     margin-left: auto;
     margin-right: auto;
   }
+  .case_prev{
+    height: 330px;
+    width: 330px;
+    object-fit: cover;
+    opacity: .5;
+  }
+  .case_prev:hover{
+    filter: hue-rotate(30deg);
+    opacity: 1;
+   }
 
   .full_img{
     width: 20em;

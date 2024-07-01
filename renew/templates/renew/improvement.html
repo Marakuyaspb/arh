@@ -116,16 +116,16 @@
 </div>
 
 <div class="container mt-4">
-  <h3 class='black h2index pb-2'>Проекты благоустройства</h3>
+  <h3 class='black h2index pt-4'>Проекты благоустройства</h3>
   
   
 
   <div class='art_container py-5'>
     {% for case in cases %}
     <a href="{% url 'renew:case' category=case.category.category id=case.id %}">
-      <div class=''>
-        <img src='{{case.main_img.url}}' class=''>
-        <h2>{{case.name}}</h2>
+      <div class='wrap_case_img'>
+        <img src='{{case.main_img.url}}' class='case_prev'>
+        <h3 class='case_name black'>{{case.name}}</h3>
       </div>
     </a>
     {% endfor %}

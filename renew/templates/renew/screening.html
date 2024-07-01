@@ -4,96 +4,134 @@
 
 {% block content %}
 <link rel='stylesheet' href='https://cdn.rawgit.com/filipelinhares/ress/master/dist/ress.min.css'>
+<link rel="stylesheet" href='{% static "css/style.css" %}'>
+
 <style type="text/css">
   
   .swiper-image-one {
-    background-image: url(https://source.unsplash.com/GXOGGENgHnQ/1600x900);
+    background-image: url(http://127.0.0.1:8000/static/img/cases/improvement/kondurcha/reality/13.jpg);
   }
 
   .swiper-image-two {
-    background-image: url(https://source.unsplash.com/Jy6luiLBsrk/1600x900);
+    background-image: url(http://127.0.0.1:8000/static/img/cases/improvement/kondurcha/reality/27.webp);
   }
 
   .swiper-image-three {
-    background-image: url(https://source.unsplash.com/sFLVTqNzG2I/1600x900);
+    background-image: url(http://127.0.0.1:8000/static/img/cases/improvement/kondurcha/reality/35.png);
   }
 
   .swiper-image-four {
-    background-image: url(https://source.unsplash.com/pj1jt4vBGZY/1600x900);
+    background-image: url(http://127.0.0.1:8000/static/img/cases/improvement/kondurcha/reality/15_crop.jpg);
   }
 
   .swiper-image-five {
-    background-image: url(https://source.unsplash.com/Jy6luiLBsrk/1600x900);
+    background-image: url(http://127.0.0.1:8000/static/img/cases/improvement/kondurcha/reality/2.jpg);
   }
 
   .swiper-image-six {
-    background-image: url(https://source.unsplash.com/bxCgan0J1Sg/1600x900);
+    background-image: url(http://127.0.0.1:8000/static/img/cases/improvement/kondurcha/reality/34.png);
   }
 </style>
-<link rel="stylesheet" href='{% static "css/style.css" %}'>
+
+<section class='pb-4'>
+  <img class='img_header'  src='{% static "headers/3.png" %}'>
+  <div class='container category_header'>
+    <h1 class='we_300 header_name pb-3'>Обследование</h1>
+    <h3 class='pt-2 pb-4 we_300'>Продуманные решения для долгожданного обновления</h3>
+     {% include 'renew/form_popup.html' %}
+  </div>
+</section>
+
+<div class='d-none d-md-block d-lg-block d-xl-block d-xxl-block'>
+  <div class="page-wrap">
+    <div id="home-slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide-one">
+            <div class="swiper-image" data-swiper-parallax-y="-20%">
+              <div class="swiper-image-inner swiper-image-left swiper-image-one ">
+                <h2 class='slider_h1'><span class="emphasis">Новое пространство</span> <br><span class='we_300'>Для отдыха и спорта.</span></h1>
+                <p>Сначала должны поработать мы</p>
+              </div>
+            </div>
+            <div class="swiper-image" data-swiper-parallax-y="35%">
+              <div class="swiper-image-inner swiper-image-right swiper-image-two">
+                <p class="paragraph pb-3">
+                  Мы начинаем разработку каждого проекта с изучения контекста.</p>
+                <p class="paragraph">При создании концепции будущего пространства, мы стараемся учесть всё: геологические особенности участка, дорожный и пешеходный траффик, историю места.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide-two">
+            <div class="swiper-image" data-swiper-parallax-y="-20%">
+              <div class="swiper-image-inner swiper-image-left swiper-image-three">
+                
+              </div>
+            </div>
+            <div class="swiper-image" data-swiper-parallax-y="35%">
+              <div class="swiper-image-inner swiper-image-right swiper-image-four">
+                <div class='white m-5 p-5'>
+                  <h2 class="so_big">‟</h2>
+                  <h3 class='we_300 pb-3'>Долина, немножко тихой воды и луч заката — самые простые вещи, самые обыкновенные, самые дорогие.</h3>
+                  <p class="paragraph">Д. Рёскин</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id='' class='d-block d-md-none'>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <img src="{% static 'img/cases/improvement/kondurcha/reality/15_crop.jpg' %}" class="d-block category_slider" alt="...">
+        <div class="carousel-caption ">
+          <h3 class='we_300 pb-3 black'>Долина, немножко тихой воды и луч заката — самые простые вещи, самые обыкновенные, самые дорогие.</h3>
+          <p class="black">Д. Рёскин</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/cases/improvement/kondurcha/reality/35.png' %}" class="d-block category_slider" alt="...">       
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/cases/improvement/kondurcha/reality/13.jpg' %}" class="d-block category_slider" alt="...">
+        <div class="carousel-caption ">
+          <h3 class='pb-3 black'>НОВОЕ ПРОСТРАНСТВО</h3>
+          <p class='we_300 pb-3 black'>Для отдыха и спорта</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="container mt-4">
+  <h3 class='black h2index pt-4'>Проекты </h3>
+  
   
 
-
-
-
-<div class="page-wrap">
-
-  <div id="home-slider">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide-one">
-          <div class="swiper-image" data-swiper-parallax-y="-20%">
-            <div class="swiper-image-inner swiper-image-left swiper-image-one">
-              <h1>A <span class="emphasis">Breath</span>. <br><span>Of Fresh Air.</span></h1>
-              <p>Chapter I, page XV</p>
-            </div>
-          </div>
-          <div class="swiper-image" data-swiper-parallax-y="35%">
-            <div class="swiper-image-inner swiper-image-right swiper-image-two">
-              <p class="paragraph">
-                A Prophet sat in the market-place and told the fortunes of all who cared to engage his services. Suddenly there came running up one who told him that his house had been broken into by thieves, and that they had made off with everything they could lay
-                hands on.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-two">
-          <div class="swiper-image" data-swiper-parallax-y="-20%">
-            <div class="swiper-image-inner swiper-image-left swiper-image-three">
-              <h1>The <span class="emphasis">Drop</span>. <br><span>Of Eternal life.</span></h1>
-              <p>Chapter II, page VII</p>
-            </div>
-          </div>
-          <div class="swiper-image" data-swiper-parallax-y="35%">
-            <div class="swiper-image-inner swiper-image-right swiper-image-four">
-              <p class="paragraph">
-                A thirsty Crow found a Pitcher with some water in it, but so little was there that, try as she might, she could not reach it with her beak, and it seemed as though she would die of thirst within sight of the remedy.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-three">
-          <div class="swiper-image" data-swiper-parallax-y="-20%">
-            <div class="swiper-image-inner swiper-image-left swiper-image-five">
-              <h1>A <span class="emphasis">Sense</span>. <br><span>Of Things to Come.</span></h1>
-              <p>Chapter III, page XI</p>
-            </div>
-          </div>
-          <div class="swiper-image" data-swiper-parallax-y="35%">
-            <div class="swiper-image-inner swiper-image-right swiper-image-six">
-              <p class="paragraph">
-                Every man carries Two Bags about with him, one in front and one behind, and both are packed full of faults. The Bag in front contains his neighbours’ faults, the one behind his own. Hence it is that men do not see their own faults, but never fail to see
-                those of others.
-              </p>
-            </div>
-          </div>
-        </div>
-
+  <div class='art_container py-5'>
+    {% for case in cases %}
+    <a href="{% url 'renew:case' category=case.category.category id=case.id %}">
+      <div class='wrap_case_img'>
+        <img src='{{case.main_img.url}}' class='case_prev'>
+        <h3 class='case_name black'>{{case.name}}</h3>
       </div>
-      <div class="swiper-pagination"></div>
-    </div>
+    </a>
+    {% endfor %}
   </div>
 
 </div>
+
 
 {% endblock %}
