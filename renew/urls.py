@@ -11,5 +11,6 @@ urlpatterns = [
     path('privacy/', views.privacy, name = 'privacy'),
     path('projection/', views.projection, name = 'projection'),
     path('screening/', views.screening, name = 'screening'),
-    path('<slug:category>/<int:id>/', views.the_case, name='case')
+    path('<slug:category>/<int:id>/', views.the_case, name='case'),
+    path('<category>/<int:id>/', views.the_case, name='the_case'),
 ]

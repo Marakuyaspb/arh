@@ -9,4 +9,5 @@ renew/static/css/bootstrap.rtl.min.css
 renew/static/css/bootstrap.rtl.min.css.map
 renew/static/js/bootstrap.min.js
 renew/static/js/bootstrap.min.js.map
+renew/static/nodemodules/*
 db.sqlite3

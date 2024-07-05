@@ -42,34 +42,45 @@
 <section>
 	<div class='container'>
 		<h2>Реализация</h2>
+
+		{% if the_case.realize_text %}
+			{{ the_case.realize_text }}
+
+		{% endif %}
 		<img class="w-100" src="">
-		<p>Набережная центрального водоема - победитель Всероссийского конкурса малых городов и исторических поселений 2020 года. Проект получил продолжение благоустройства вдоль водоема. Первая очередь реализации состоялась в 2018 году. </p>
 
 
+		
+		{% if the_case.visualization_text %}
 		<h2>Визуализация</h2>
+			{{ the_case.visualization_text }}
 
+		{% endif %}
+
+		
+		{% if the_case.analisys_text %}
 		<h2>Градостроительный анализ</h2>
+			{{ the_case.analisys_text }}
 
+		{% endif %}
+
+		
+		{% if the_case.concept_text %}
 		<h2>Концепция, проект</h2>
-		<p>Проектом запланированы следующие функциональные зоны:
-		<ul>
-			<li>Экстрим парк</li>
-			<li>Кафе</li>
-			<li>Зона проката</li>
-			<li>Стритбольная площадка</li>
-			<li>Воркаут площадка</li>
-			<li>Пирс на воде</li>
-			<li>Каскад фонтанов</li>
-		</ul>
+			{{ the_case.concept_text }}
+
+		{% endif %}
 
 	</div>
 </section>
 
 <section class='call_me_form'>
-<center>
-{% include 'renew/form_popup.html' %}
-</center>
+	<center>
+	{% include 'renew/form_popup.html' %}
+	</center>
 </section>
+
+{% include 'renew/carousels/carousel_all.html' %}
 
 
 {% endblock %}

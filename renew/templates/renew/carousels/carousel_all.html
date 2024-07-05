@@ -1,0 +1,35 @@
+<style>
+	.owl-prev, .owl-next {
+      position:absolute;
+   }
+  .owl-prev {
+      left:0;
+      top: 120px;
+   }
+   .owl-next {
+      right:0;
+      top:120px;
+   }
+	.owl-nav{
+		padding: 0px 20px;
+	}
+
+	.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+		font-family: "ALS Hauss Hairline"!important;
+		font-size: 5em;
+		color: #a2b5c5;
+	}
+</style>
+
+<div class="owl-carousel owl-theme">
+{% for e in similar_cases %}
+	<div class="item">
+	  <a href="{% url 'renew:the_case' category=e.category.category id=e.id %}">
+      <div class='wrap_case_img'>
+        <img src='{{e.main_img.url}}' class='case_prev'>
+        <h3 class='case_name black'>{{e.name}}</h3>
+      </div>
+    </a>
+  </div>
+{% endfor %}
+</div>
