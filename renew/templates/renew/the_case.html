@@ -4,8 +4,8 @@
 {% block content %}
 
 
-<section class=''>
-	<div class=' '>
+<section class='card_overlay'>
+	<div class='case_back_header '>
 		{% if the_case.main_video %}
 		<video autoplay loop class='video_header '>
 			<source src="{{ the_case.main_video.url }}" type="video/mp4">
@@ -13,27 +13,31 @@
 		{% endif %}
 
 		{% if the_case.main_img %}
-		<img class="w-100" src="{{ the_case.main_img.url }}">
+		<img class="w-100 case_header" src="{{ the_case.main_img.url }}">
 		{% endif %}
 
 		{{ the_case.description|linebreaks }}
 	</div>
 
-	<div class='container'>
+	<div class='case_container_header white pb-4'>
 		<h1 class='the_case_header'>{{ the_case.name }}</h1>
-		<p class='the_case_info'>Адрес: {{ the_case.address }}</p>
-		<p class='the_case_info'>Заказчик: {{ the_case.customer }}</p>
-		<p class='the_case_info'>Проект выполнен: {{ the_case.performer }} </p>
+		<p  class='the_case_info'>Адрес: {{ the_case.address }}</p>
+		<p  class='the_case_info'>Заказчик: {{ the_case.customer }}</p>
+		<p  class='the_case_info'>Проект выполнен: {{ the_case.performer }}</p>
 		{% if the_case.architector %}
-			<p class='the_case_info'>{{ the_case.architector }}</p>
+			<p  class='the_case_info'>{{ the_case.architector }}</p>
 		{% endif %}
 		{% if the_case.engeneer %}
-			<p class='the_case_info'>{{ the_case.engeneer }}</p>
+			<p class=''><span class='the_case_info'>{{ the_case.engeneer }}</p>
 		{% endif %}
-		<p class='the_case_info'>Площадь: {{ the_case.square }}</p>
-		<p class='the_case_info'>Год: {{ the_case.year }}</p>
+		<p class=''><span class='the_case_info'>Площадь: {{ the_case.square }}</p>
+		<p class=''><span class='the_case_info'>Год: {{ the_case.year }}</p>
+
+		<br>
 	</div>
 </section>
+
+<br><br>
 
 <section>
 	<div class='container'>

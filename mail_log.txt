@@ -3061,3 +3061,5 @@ tz
 2024-07-01 14:13:00,679 - Not Found: /media/case_headers/1
 .jpg
 2024-07-01 14:23:47,688 - Not Found: /favicon.ico
+2024-07-05 14:42:37,787 - Not Found: /favicon.ico
+2024-07-05 14:45:14,218 - Not Found: /improvement/42/

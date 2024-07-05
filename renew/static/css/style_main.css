@@ -359,6 +359,9 @@ hr{
 }
  
 
+
+
+
 /**//**//**//**//**//**/  
 
 
@@ -384,6 +387,7 @@ hr{
     margin-top: -40em;
     padding-bottom: 8em;
   }
+
   .h1_header{
     margin-top: -30em;
     padding-bottom: 6em;
@@ -458,6 +462,42 @@ hr{
     font-weight: 100;
     transition: 0.3s;
     z-index: 2;
+  }
+
+
+  /* THE CASE PAGE */
+
+  .case_header{
+    max-height: 60vh;
+    object-fit: cover;
+  }
+  .case_back_header{
+    position: relative;
+    z-index: -111;
+    opacity: .5;
+  }
+  .card_overlay {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .case_container_header{
+    position: relative;
+    z-index: 11;
+    margin-top: -28em;
+    padding: 0 0 0 10em;
+  }
+  .the_case_header{
+    font-weight: 200;
+    font-size: 3.4em;
+    padding: .4em 0;
+  }
+  .the_case_param{
+    font-weight: 550;
+    font-size: 1.2em;
+  }
+  .the_case_info{
+    font-weight: 300;
+    font-size: 1.2em;
   }
 
 
@@ -583,6 +623,41 @@ hr{
     z-index: 2;
   }
 
+
+  /* THE CASE PAGE */
+
+  .case_header{
+    height: 70vh;
+    object-fit: cover;
+  }
+  .the_case_header{
+    font-weight: 200;
+    font-size: 2.3em;
+    padding: .2em 0 1em 0;
+  }
+  .case_back_header{
+    position: relative;
+    z-index: -111;
+    opacity: .5;
+  }
+  .card_overlay {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  .case_container_header{
+    position: relative;
+    z-index: 11;
+    margin-top: -32em;
+    padding: 0 2em 6em 2em;
+  }
+  .the_case_param{
+    font-weight: 550;
+    font-size: 1.1em;
+  }
+  .the_case_info{
+    font-weight: 300;
+    font-size: 1.1em;
+  }
 
 }
 
