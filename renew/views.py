@@ -94,7 +94,6 @@ def the_case(request, category=None, id=None):
 		the_case = get_object_or_404(Case, id=id)
 		similar_cases = Case.objects.filter(category=the_case.category)
 
-
 	if request.method == 'POST':
 		callme_form = CallMeForm(request.POST)
 		if callme_form.is_valid():

@@ -34,15 +34,33 @@ class Case(models.Model):
 	year = models.CharField(max_length=250, null=True, blank=True, verbose_name = 'Год')
 
 	realize_text = models.TextField(max_length=2500, null=True, blank=True, verbose_name = 'Текст о Реализации')
+	image_r_1 = models.ImageField(upload_to='realize/', null=True, blank=True, verbose_name = 'Реализация | 1')
+	image_r_2 = models.ImageField(upload_to='realize/', null=True, blank=True, verbose_name = 'Реализация | 2')
+	image_r_3 = models.ImageField(upload_to='realize/', null=True, blank=True, verbose_name = 'Реализация | 3')
+	image_r_4 = models.ImageField(upload_to='realize/', null=True, blank=True, verbose_name = 'Реализация | 4')
+	image_r_5 = models.ImageField(upload_to='realize/', null=True, blank=True, verbose_name = 'Реализация | 5')
+	image_r_6 = models.ImageField(upload_to='realize/', null=True, blank=True, verbose_name = 'Реализация | 6')
 	visualization_text = models.TextField(max_length=2500, null=True, blank=True, verbose_name = 'Текст о Визуализации')
+	image_v_1 = models.ImageField(upload_to='visualization/',null=True,blank=True)
+	image_v_2 = models.ImageField(upload_to='visualization/',null=True,blank=True)
+	image_v_3 = models.ImageField(upload_to='visualization/',null=True,blank=True)
+	image_v_4 = models.ImageField(upload_to='visualization/',null=True,blank=True)
+	image_v_5 = models.ImageField(upload_to='visualization/',null=True,blank=True)
+	image_v_6 = models.ImageField(upload_to='visualization/',null=True,blank=True)
 	analisys_text = models.TextField(max_length=2500, null=True, blank=True, verbose_name = 'Текст о Градостроительном анализе')
+	image_a_1 = models.ImageField(upload_to='analisys/',null=True,blank=True)
+	image_a_2 = models.ImageField(upload_to='analisys/',null=True,blank=True)
+	image_a_3 = models.ImageField(upload_to='analisys/',null=True,blank=True)
+	image_a_4 = models.ImageField(upload_to='analisys/',null=True,blank=True)
+	image_a_5 = models.ImageField(upload_to='analisys/',null=True,blank=True)
+	image_a_6 = models.ImageField(upload_to='analisys/',null=True,blank=True)
 	concept_text = models.TextField(max_length=2500, null=True, blank=True, verbose_name = 'Текст о Концепции')
-
-	realize_img = models.CharField(max_length=250, null=True, blank=True, verbose_name = 'Путь в директорию Реализация')
-	visualization_img = models.CharField(max_length=250, null=True, blank=True, verbose_name = 'Путь в директорию Визуализация')
-	analisys_img = models.CharField(max_length=250, null=True, blank=True, verbose_name = 'Путь в директорию Градостроительный анализ')
-	concept_img = models.CharField(max_length=250, null=True, blank=True, verbose_name = 'Путь в директорию Концепция')
-
+	image_c_1 = models.ImageField(upload_to='concept/',null=True,blank=True)
+	image_c_2 = models.ImageField(upload_to='concept/',null=True,blank=True)
+	image_c_3 = models.ImageField(upload_to='concept/',null=True,blank=True)
+	image_c_4 = models.ImageField(upload_to='concept/',null=True,blank=True)
+	image_c_5 = models.ImageField(upload_to='concept/',null=True,blank=True)
+	image_c_6 = models.ImageField(upload_to='concept/',null=True,blank=True)
 
 	class Meta:
 		ordering = ['name']
@@ -54,6 +72,7 @@ class Case(models.Model):
 		verbose_name_plural = 'Объекты'
 
 
+# Order call form
 
 class CallMe(models.Model):
 	id = models.AutoField(primary_key=True)

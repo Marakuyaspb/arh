@@ -3385,3 +3385,960 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'the_case' not found. 'the_ca
 2024-07-05 15:41:25,079 - Not Found: /media/case_headers/17.jpg
 2024-07-05 15:41:25,177 - Not Found: /media/case_headers/17.jpg
 2024-07-05 15:43:54,487 - Not Found: /products/
+2024-07-05 16:15:43,453 - /home/a/ar/renew/views.py changed, reloading.
+2024-07-05 16:19:01,644 - /home/a/ar/renew/views.py changed, reloading.
+2024-07-05 16:26:38,664 - /home/a/ar/renew/views.py changed, reloading.
+2024-07-09 12:20:42,421 - /home/a/ar/renew/views.py changed, reloading.
+2024-07-09 12:22:10,100 - /home/a/ar/renew/views.py changed, reloading.
+2024-07-09 12:22:44,071 - /home/a/ar/renew/views.py changed, reloading.
+2024-07-09 12:24:21,053 - Not Found: /favicon.ico
+2024-07-09 12:28:52,609 - /home/a/ar/renew/views.py changed, reloading.
+2024-07-09 12:30:38,687 - /home/a/ar/renew/views.py changed, reloading.
+2024-07-09 12:39:37,199 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 12:42:30,101 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 12:52:22,379 - Not Found: /favicon.ico
+2024-07-09 12:53:57,548 - /home/a/ar/renew/admin.py changed, reloading.
+2024-07-09 12:56:46,503 - /home/a/ar/renew/admin.py changed, reloading.
+2024-07-09 12:56:48,991 - Not Found: /favicon.ico
+2024-07-09 12:57:50,028 - /home/a/ar/renew/admin.py changed, reloading.
+2024-07-09 12:57:52,002 - Not Found: /favicon.ico
+2024-07-09 12:58:41,343 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 12:58:54,945 - /home/a/ar/renew/admin.py changed, reloading.
+2024-07-09 12:59:06,330 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 12:59:28,373 - Not Found: /favicon.ico
+2024-07-09 13:04:14,338 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 13:04:55,209 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 13:06:48,933 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 13:06:59,499 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 13:08:12,631 - Internal Server Error: /admin/renew/imagerealise/add/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1891, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1751, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 1809, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 924, in log_addition
+    object_repr=str(obj),
+  File "/home/a/ar/renew/models.py", line 72, in __str__
+    return self.image_r.name
+AttributeError: 'ImageRealise' object has no attribute 'image_r'
+2024-07-09 13:09:37,412 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 13:19:06,235 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 13:19:14,421 - Internal Server Error: /improvement/1/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 505, in parse
+    compile_func = self.tags[command]
+KeyError: 'static'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 110, in the_case
+    return render(request, 'renew/the_case.html', context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 157, in render
+    return compiled_parent._render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 63, in render
+    result = block.nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/defaulttags.py", line 321, in render
+    return nodelist.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loader_tags.py", line 197, in render
+    template = context.template.engine.select_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 206, in select_template
+    return self.get_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 175, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/engine.py", line 157, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 200, in compile_nodelist
+    return parser.parse()
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 507, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/home/a/.local/lib/python3.10/site-packages/django/template/base.py", line 568, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 108: 'static'. Did you forget to register or load this tag?
+2024-07-09 13:19:14,622 - Not Found: /favicon.ico
+2024-07-09 13:19:35,252 - Not Found: /media/
+2024-07-09 13:19:35,369 - Not Found: /media/
+2024-07-09 13:25:22,567 - Not Found: /media/
+2024-07-09 13:26:03,625 - Not Found: /media/
+2024-07-09 13:26:03,731 - Not Found: /media/
+2024-07-09 13:26:49,875 - Not Found: /media/
+2024-07-09 13:28:38,414 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 13:31:27,125 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 13:31:29,450 - /home/a/ar/renew/admin.py changed, reloading.
+2024-07-09 13:34:46,688 - Internal Server Error: /admin/renew/case/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 2069, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 376, in __len__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:35:25,333 - Internal Server Error: /admin/renew/case/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 2069, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 376, in __len__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:36:31,960 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    print(cases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 370, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:37:33,066 - /home/a/ar/renew/views.py changed, reloading.
+2024-07-09 13:37:35,427 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    print(cases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 370, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:37:35,608 - Not Found: /favicon.ico
+2024-07-09 13:37:49,873 - /home/a/ar/renew/admin.py changed, reloading.
+2024-07-09 13:42:33,503 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 13:42:47,138 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    print(cases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 370, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:42:47,354 - Not Found: /favicon.ico
+2024-07-09 13:42:53,525 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    print(cases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 370, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:43:43,013 - /home/a/ar/renew/models.py changed, reloading.
+2024-07-09 13:44:01,447 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    print(cases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 370, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:46:49,932 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    print(cases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 370, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:46:50,146 - Not Found: /favicon.ico
+2024-07-09 13:49:13,578 - Internal Server Error: /admin/renew/case/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 2069, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 376, in __len__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:55:26,755 - Internal Server Error: /admin/renew/case/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 2069, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 376, in __len__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:55:28,312 - Internal Server Error: /admin/renew/case/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 2069, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 376, in __len__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:55:29,826 - Internal Server Error: /admin/renew/case/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/utils/decorators.py", line 134, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/a/.local/lib/python3.10/site-packages/django/contrib/admin/options.py", line 2069, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 376, in __len__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:55:30,014 - Not Found: /favicon.ico
+2024-07-09 13:55:35,587 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    print(cases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 370, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:55:53,732 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    print(cases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 370, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-09 13:55:53,933 - Not Found: /favicon.ico
+2024-07-10 13:54:27,308 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    print(cases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 370, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-10 13:54:38,666 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    print(cases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 370, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-10 13:57:32,638 - Internal Server Error: /improvement/
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: renew_case.image_r_1
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/exception.py", line 56, in inner
+    response = get_response(request)
+  File "/home/a/.local/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/a/ar/renew/views.py", line 44, in improvement
+    print(cases)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 370, in __repr__
+    data = list(self[: REPR_OUTPUT_SIZE + 1])
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 394, in __iter__
+    self._fetch_all()
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 1867, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/query.py", line 87, in __iter__
+    results = compiler.execute_sql(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/models/sql/compiler.py", line 1398, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 102, in execute
+    return super().execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 84, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/a/.local/lib/python3.10/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: renew_case.image_r_1
+2024-07-10 13:57:32,837 - Not Found: /favicon.ico
+2024-07-10 14:11:38,342 - Not Found: /media/
+2024-07-10 14:11:38,429 - Not Found: /media/
+2024-07-10 14:11:55,077 - Not Found: /favicon.ico
+2024-07-10 14:12:01,033 - Not Found: /favicon.ico
+2024-07-10 14:15:55,378 - Not Found: /favicon.ico
+2024-07-10 14:15:57,719 - Not Found: /media/
+2024-07-10 14:15:57,816 - Not Found: /media/
+2024-07-10 14:15:59,093 - Not Found: /media/
+2024-07-10 14:15:59,210 - Not Found: /media/
+2024-07-10 14:16:00,623 - Not Found: /media/
+2024-07-10 14:18:55,973 - Not Found: /media/
+2024-07-10 14:18:57,872 - Not Found: /media/
+2024-07-10 14:18:58,015 - Not Found: /media/
+2024-07-10 14:18:59,472 - Not Found: /media/
+2024-07-10 14:19:17,246 - Not Found: /media/
+2024-07-10 14:19:17,622 - Not Found: /media/
+2024-07-10 14:20:49,909 - Not Found: /media/
+2024-07-10 14:20:50,037 - Not Found: /media/
+2024-07-10 14:22:58,777 - Not Found: /media/
+2024-07-10 14:22:59,140 - Not Found: /media/
+2024-07-10 14:23:42,543 - Not Found: /media/
+2024-07-10 14:23:58,996 - Not Found: /media/
+2024-07-10 14:26:41,605 - Not Found: /media/
+2024-07-10 14:33:01,640 - Not Found: /media/
+2024-07-10 14:33:01,755 - Not Found: /media/
+2024-07-10 14:33:03,697 - Not Found: /media/
+2024-07-10 14:34:20,154 - Not Found: /media/
+2024-07-10 14:34:20,418 - Not Found: /media/
+2024-07-10 14:36:22,245 - Not Found: /media/

@@ -3,7 +3,6 @@ from django.http import HttpResponse
 from django.urls import reverse
 from .models import CallMe, Case, Category
 
-
 @admin.register(Category)
 class CategoryAdmin(admin.ModelAdmin):
 	list_display = ['id_cat', 'category']
