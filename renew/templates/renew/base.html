@@ -25,20 +25,20 @@
         <div>
           <a class="navbar-brand" href='{% url "renew:index" %}'> 
             <div class='d-flex'>   
-              <div><img class='logo p-2' src='{% static "logo.svg" %}'></div>
-              <div><h1 class='black brand_aik ms-2'>АИК «Реновация»</h1></div>
+              <div><img class='logo p-2' src='{% static "logo_white.svg" %}'></div>
+              <div><h1 class='white brand_aik ms-2'>АИК «Реновация»</h1></div>
             </div>
           </a>
         </div>
 
         <div class="d-flex justify-content-between">
           <div class='pt-2'>
-            <a  href='#'><img class='smm_head py-2 ps-2' src='{% static "img/icons/vk.png" %}'></a>
-            <a  href='#'><img class='smm_head py-2 pe-2' src='{% static "img/icons/inst.png" %}'></a>
+            <a  href='#'><img class='smm_head py-2 ps-2' src='{% static "img/icons/vk_gray.png" %}'></a>
+            <a  href='#'><img class='smm_head py-2 pe-2' src='{% static "img/icons/inst_gray.png" %}'></a>
           </div>
           <div class='px-2'>
-            <p class="head_phone">+7 (917) 245-42-25</p>
-            <p class="head_mail">renovation-rf@mail.ru</p>
+            <p class="head_phone white">+7 (917) 245-42-25</p>
+            <p class="head_mail white">renovation-rf@mail.ru</p>
           </div>
 
            <div class='modal_container' onclick='showModal(this);'>
@@ -50,13 +50,13 @@
 
       <div class="d-flex justify-content-center" id="menu">
         <hr class='hr_line'>
-        <a class="nav-link" href='{% url "renew:index" %}#about'>О Компании</a>
-        <a class="nav-link" href='#'>Новости</a>
-        <span class='pt-2'>|</span>
+        <a class="nav-link " href='{% url "renew:index" %}#about'>О Компании</a>
+        <a class="nav-link " href='#'>Новости</a>
+        <span class='pt-2 gray'>|</span>
         <a class="nav-link" href='{% url "renew:improvement" %}'>Благоустройство</a>
         <a class="nav-link" href='{% url "renew:projection" %}'>Проектирование</a>
         <a class="nav-link" href='{% url "renew:screening" %}'>Обследование</a>
-        <span class='pt-2'>|</span>
+        <span class='pt-2 gray'>|</span>
         <a class="nav-link" href='{% url "renew:index" %}#team'>Команда</a>
         <a class="nav-link" href='{% url "renew:index" %}#partners'>Партнеры</a>
         <a class="nav-link" href='http://127.0.0.1:8000#contact'>Контакты</a>

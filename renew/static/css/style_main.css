@@ -115,14 +115,6 @@ hr{
 }
 
 
-.nav-link{
-  color: #010305!important;
-  font-weight: 300;
-  margin: 0 .3em;
-}
-.nav-link:hover{
-  color: #0c365c!important;
-}
 
 .nav_footer{
   color: #a2b5c5!important;
@@ -187,7 +179,7 @@ hr{
 .menu_desctop{
   position: absolute;
   z-index: 3;
-  background: rgba(255,255,255, .4);
+  background: rgba(0,0,0, .5);
 }
 .infogr_icon{
   height: 5em;
@@ -368,6 +360,16 @@ hr{
 /*  DESCTOP  */
 @media (min-width: 811px){
 
+  .nav-link{
+    color: #a2b5c5!important;
+    font-weight: 300;
+    margin: 0 .3em;
+  }
+  .nav-link:hover{
+    color:  #f3f8fd !important;
+  }
+
+
   .img_header {
     margin-top: -8em;
     position: relative;
@@ -517,6 +519,16 @@ hr{
 
 /*  PHONE  */
 @media (max-width: 810px) {
+
+  .nav-link{
+    color: #010305!important;
+    font-weight: 300;
+    margin: 0 .3em;
+  }
+  .nav-link:hover{
+    color: #0c365c!important;
+  }
+
 
   .img_header {
     margin-top: -10em;
