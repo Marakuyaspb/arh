@@ -61,6 +61,9 @@ hr{
 .blue{
   color: #79cbee;
 }
+.gray_light{
+  color: #d6dee6 ;
+}
 .gray{
   color: #a2b5c5;
 }
@@ -78,6 +81,10 @@ hr{
 .blue_bg{
   background-color: #79cbee;
   /*  rgb(121,183,238) */
+}
+.gray_light_bg{
+  color: #d6dee6;
+  /* rgb(214, 222, 230) */
 }
 .gray_bg{
   background-color: #a2b5c5;
@@ -205,7 +212,9 @@ hr{
   text-align: center;
   max-width: 14em;
   padding: .7em 1em;
-  background-color: rgba(121,183,238, .8);
+  border: 2px solid rgb(243, 248, 253);
+  color: rgb(243, 248, 253);
+  /*background-color: rgba(121,183,238, .8);*/
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .button_dark{
@@ -361,7 +370,7 @@ hr{
 @media (min-width: 811px){
 
   .nav-link{
-    color: #a2b5c5!important;
+    color: #d6dee6!important;
     font-weight: 300;
     margin: 0 .3em;
   }
@@ -408,6 +417,28 @@ hr{
   }
 
 
+  .cat_container_header{
+    margin-top: -32em;
+    position: relative;
+    z-index: 444;
+    padding-bottom: 4em;
+  }
+  .cat_back_header{
+    position: relative;
+    object-fit: cover;
+    z-index: -111;
+    opacity: .5;
+    max-height: 90vh;
+  }
+  .cat_overlay {
+    position: relative;
+    max-height: 90vh;
+    /*rgb(214, 222, 230)*/
+    background: rgba(111,111,111, 0.2);
+  }
+
+
+
   .art_container {
     display: grid;
     grid-gap: 20px;
@@ -437,7 +468,7 @@ hr{
 
   .brand_aik {
     font-size: 1.5em!important;
-    font-weight: 300;
+    font-weight: 400;
     padding-top: .6em;
   }
 
@@ -580,6 +611,28 @@ hr{
   .footer_logo{
     height: 5em;
   }
+
+
+  .cat_container_header{
+    margin-top: -22em;
+    position: relative;
+    z-index: 444;
+    padding-bottom: 4em;
+  }
+  .cat_back_header{
+    position: relative;
+    object-fit: cover;
+    z-index: -111;
+    opacity: .5;
+    max-height: 90vh;
+  }
+  .cat_overlay {
+    position: relative;
+    max-height: 90vh;
+    /*rgb(214, 222, 230)*/
+    background: rgba(111,111,111, 0.2);
+  }
+  
 
   .art_container {
     display: grid;
