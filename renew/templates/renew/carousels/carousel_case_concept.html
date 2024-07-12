@@ -23,20 +23,26 @@ Fade Carousel
 .padding-left-10{
 	padding-left: 10em; !important
 }
-
+.control_carousel{
+	margin-top: -2em;
+	z-index: 111;
+	position: relative;
+}
 
 .fade-carousel-indicators li{
 	display: inline-block;
-	border-radius: 50%;
-	width: .9em;
-	height: .9em;
+	border-radius: 1px;
+	width: 2em;
+	height: .3em;
 	margin: 5px 2px;
-	background-color: rgba(162,181,197, .5);
+	background-color: rgb(255,255,255, .8);
 }
 
 .fade-carousel-indicators li:active{
-	background-color: rgba(0,0,0, .5);
+	background-color: rgba(255,255,255, .5);
 }
+
+
 </style>
 
 
@@ -45,67 +51,67 @@ Fade Carousel
 <div id='carouselFade' class="carousel_fade">
 
 	<div class='carousel_slide_fade fade_it'>
-		<img src="/media/{{ case.image_r_1.url }}" alt="Image 1">
+		<img src="{{ the_case.image_c_1.url }}" class='img-fluid' alt="Image 1">
 	</div>
 
-	{% if case.image_c_2 %}
+	{% if the_case.image_c_2 %}
 		<div class="carousel_slide_fade fade_it">
-			<img src="/media/{{ case.image_r_2.url }}" alt="Image 2">
+			<img src="{{ the_case.image_c_2.url }}" class='img-fluid' alt="Image 2">
 		</div>
 	{% endif %}
 
-	{% if case.image_c_3 %}
+	{% if the_case.image_c_3 %}
 		<div class="carousel_slide_fade fade_it">
-			<img src="/media/{{ case.image_r_3.url }}" alt="Image 3">
+			<img src="{{ the_case.image_c_3.url }}" class='img-fluid' alt="Image 3">
 		</div>
 	{% endif %}
 
-	{% if case.image_c_4 %}
+	{% if the_case.image_c_4 %}
 		<div class="carousel_slide_fade fade_it">
-			<img src="/media/{{ case.image_r_4.url }}" alt="Image 2">
+			<img src="{{ the_case.image_c_4.url }}" class='img-fluid' alt="Image 2">
 		</div>
 	{% endif %}
 
-	{% if case.image_c_5 %}
+	{% if the_case.image_c_5 %}
 		<div class="carousel_slide_fade fade_it">
-			<img src="/media/{{ case.image_r_5.url }}" alt="Image 3">
+			<img src="{{ the_case.image_c_5.url }}" class='img-fluid' alt="Image 3">
 		</div>
 	{% endif %}
 
-	{% if case.image_c_6 %}
+	{% if the_case.image_c_6 %}
 		<div class="carousel_slide_fade fade_it">
-			<img src="/media/{{ case.image_r_6.url }}" alt="Image 3">
+			<img src="{{ the_case.image_c_6.url }}" class='img-fluid' alt="Image 3">
 		</div>
 	{% endif %}
 
-	<div class="d-flex justify-content-between px-3">
+	<div class="d-flex justify-content-between control_carousel px-4">
 		<div>
-		  <a class="prev arrows_nav" onclick="plusSlides(-1)"><img src="/static/img/prev.png" alt="Prev"></a>
+		  <!-- <a class="prev arrows_nav" onclick="plusSlides(-1)"><img class='mt-3' src="/static/img/prev.png" alt="Prev"></a> -->
 		</div>
-		<div>
+		<div class=''>
 		  <ul class="fade-carousel-indicators">
 		    <li data-target="#carouselFade" data-slide-to="0" class="indicator active" onclick="currentSlide(1)"></li>
 		    
-		    {% if case.image_c_2 %}
+		    {% if the_case.image_c_2 %}
 		    <li data-target="#carouselFade" data-slide-to="1" class="indicator" onclick="currentSlide(2)"></li>
 		    {% endif %}
-		    {% if case.image_c_3 %}
+		    {% if the_case.image_c_3 %}
 		    <li data-target="#carouselFade" data-slide-to="2" class="indicator" onclick="currentSlide(3)"></li>
 		    {% endif %}
-		    {% if case.image_c_4 %}
+		    {% if the_case.image_c_4 %}
 		    <li data-target="#carouselFade" data-slide-to="3" class="indicator" onclick="currentSlide(4)"></li>
 		    {% endif %}
-		    {% if case.image_c_5 %}
+		    {% if the_case.image_c_5 %}
 		    <li data-target="#carouselFade" data-slide-to="4" class="indicator" onclick="currentSlide(5)"></li>
 		    {% endif %}
-		    {% if case.image_c_6 %}
+		    {% if the_case.image_c_6 %}
 		    <li data-target="#carouselFade" data-slide-to="5" class="indicator" onclick="currentSlide(6)"></li>
 		    {% endif %}
 
 		  </ul>
 		</div>
 		<div>
-	  	<a class="next arrows_nav" onclick="plusSlides(1)"><img src="/static/img/next.png" alt="Next"></a>
+	  	<!-- <a class="next arrows_nav" onclick="plusSlides(1)"><img class='mt-3' src="/static/img/next.png" alt="Next"></a> -->
 	  </div>
   </div>
 
