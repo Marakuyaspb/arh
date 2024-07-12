@@ -468,7 +468,7 @@ hr{
   /* THE CASE PAGE */
 
   .case_header{
-    max-height: 60vh;
+    max-height: 65vh;
     object-fit: cover;
   }
   .case_back_header{
@@ -477,6 +477,8 @@ hr{
     opacity: .5;
   }
   .card_overlay {
+    position: relative;
+    max-height: 65vh;
     background: rgba(0, 0, 0, 0.7);
   }
 
@@ -642,13 +644,13 @@ hr{
   }
   .card_overlay {
     background: rgba(0, 0, 0, 0.7);
+    height: 70vh;
   }
 
   .case_container_header{
     position: relative;
     z-index: 11;
     margin-top: -32em;
-    padding: 0 2em 6em 2em;
   }
   .the_case_param{
     font-weight: 550;
