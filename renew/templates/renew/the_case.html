@@ -44,30 +44,35 @@
 
 
 		{% if the_case.concept_text %}
-		<h2 class='pt-3'>Концепция, проект</h2>
+		<h2 class='the_case_header pt-3'>Концепция, проект</h2>
 			{{ the_case.concept_text|linebreaks }}
 		{% endif %}
 
 		
 
 		{% if the_case.realize_text %}
-		<h2 class='pt-3'>Реализация</h2>
-			{{ the_case.realize_text|linebreaks }}
-		
-		<div class='py-3'>
-			{% include 'renew/carousels/carousel_case_realize.html' %}
+
+		<div class='row'>
+			<div class='col-md-6'>
+				<h2 class='the_case_header pt-3'>Реализация</h2>
+				{{ the_case.realize_text|linebreaks }}
+			</div>
+			<div class='col-md-6 py-3'>
+				{% include 'renew/carousels/carousel_case_realize.html' %}
+			</div>
 		</div>
+
 		{% endif %}
 
 		
 		{% if the_case.visualization_text %}
-		<h2 class='pt-3'>Визуализация</h2>
+		<h2 class='the_case_header pt-3'>Визуализация</h2>
 			{{ the_case.visualization_text|linebreaks }}
 		{% endif %}
 
 		
 		{% if the_case.analisys_text %}
-		<h2 class='pt-3'>Градостроительный анализ</h2>
+		<h2 class='the_case_header pt-3'>Градостроительный анализ</h2>
 			{{ the_case.analisys_text|linebreaks }}
 
 		{% endif %}
