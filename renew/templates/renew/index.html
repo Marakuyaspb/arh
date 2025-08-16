@@ -4,25 +4,27 @@
 {% block content %}
 
 <div class='d-none d-lg-block d-xl-block d-xxl-block'>
-  <img src="{% static 'img/headers/kvadro_index.jpg' %}" class="img_header">
+  <img src="{% static 'img/headers/kvadro_index.jpg' %}" class="index_header">
+  <div class='glass h1_header'>
+    <h1 class='h1header'>Архитектурно-инженерная компания «РЕНОВАЦИЯ»</h1>
+    <h2 class='pt-2 pb-4 we_300 h2index'>Профессиональные решения вопросов в области проектирования</h2>
+    {% include 'renew/form_popup.html' %} 
+  </div>
 </div>
 
 <div id='' class='d-block d-lg-none'>
   <img src="{% static 'img/headers/kvadro_index_mob.png' %}" class="index_header">
+  <div class='glass_lite h1_header'>
+    <h1>Архитектурно-инженерная компания «РЕНОВАЦИЯ»</h1>
+    <h2 class='pt-2 pb-4 we_300'>Профессиональные решения вопросов в области проектирования</h2>
+    <!-- {% include 'renew/form_popup.html' %}  -->
+  </div>
 </div>
 
   <!--<video autoplay loop class='video_header '>
   <video autoplay controls>
     <source src="{% static 'video/plan.mp4' %}" type="video/mp4">
   </video> -->
-
-
-
-  <div class='container h1_header'>
-    <h1>Архитектурно-инженерная компания «РЕНОВАЦИЯ»</h1>
-    <h2 class='pt-2 pb-4 we_300'>Профессиональные решения вопросов в области проектирования</h2>
-     {% include 'renew/form_popup.html' %}
-  </div>
 
 
 <div class='d-none d-lg-block d-xl-block d-xxl-block'><br><br><br><br></div>

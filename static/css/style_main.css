@@ -121,8 +121,22 @@ hr{
   margin-left: auto!important;
 }
 
-
-
+.glass{
+    background: linear-gradient(45deg, rgba(1, 3, 5, .60), rgba(10, 15, 18, .55) 50%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 3em 2em 1em 2em;
+  }
+.glass_lite{
+    background: linear-gradient(45deg, rgba(202, 220, 237, .10), rgba(237, 240, 242, .25) 50%);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 2em;
+}
 .nav_footer{
   color: #a2b5c5!important;
   font-weight: 300;
@@ -325,11 +339,6 @@ hr{
 }
 
 
-.h2index{
-  font-size: 2.5em!important;
-  font-weight: 200!important;
-}
-
 
 .category_slider{
   height: 500px;
@@ -411,8 +420,10 @@ hr{
   }
 
   .h1_header{
-    margin-top: -30em;
-    padding-bottom: 6em;
+    margin: -36em 0 6em 6em;
+    /*padding-bottom: 6em;*/
+    width: 60%;
+    color: #fff;
   }
   .header_name{
     font-size: 6em;
@@ -490,7 +501,6 @@ hr{
     max-height: 5em
   }
 
-
   .callme_container{
     margin-top: 7em;
     margin-left: auto;
@@ -499,13 +509,13 @@ hr{
   }
   .close {
     color: #fff;
-    position: absolute;
-    top: 15px;
-    right: 35px;
+    position: relative;
+    /*top: 15px;
+    right: 35px;*/
     font-size: 60px;
     font-weight: 100;
     transition: 0.3s;
-    z-index: 2;
+    z-index: 5;
   }
 
 
@@ -553,8 +563,6 @@ hr{
 /**//**//**//**//**//**/  
 
 
-/*  TABLET  */
-
 
 /**//**//**//**//**//**/  
 
@@ -577,9 +585,9 @@ hr{
     position: relative;
     z-index: -999;
     width: 100%;
-    /*height: 100vh;*/
+    height: 80vh;
+    opacity: 90%;
     overflow-y: clip;
-    filter: grayscale(50%);
     object-fit: cover;
   }
 
@@ -599,18 +607,14 @@ hr{
     object-fit: cover;
   }
 
-  .video_header {
-    margin-top: -10em;
-    position: relative;
-    z-index: -999;
-    width: auto;
-    height: 110vh;
-    object-fit: cover;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden;
+
+  .h1index{
+    font-size: 2.5em!important;
+    font-weight: 200!important;
+  }
+  .h2index{
+    font-size: 1.8em!important;
+    font-weight: 200!important;
   }
   .header_name{
     font-size: 2.5em;
@@ -621,8 +625,8 @@ hr{
   }
 
   .h1_header{
-    margin-top: 12em;
-    padding-bottom: 6em;
+    margin: -26em 0 0em 1em;
+    width: 90%;
   }
 
   .footer_brand{

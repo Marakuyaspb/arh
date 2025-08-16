@@ -4,13 +4,14 @@
     <div class='thumb button_form blue_bg mt-3 mb-5 black'>БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</div>
 
     <div class='modal_full hide'>
-      <span class="close" onclick="closeModal(this);">&times;</span>
-
       <div class=''>
         
         <form method="post" class="callme_container white_bg">
+          <span class="close" onclick="closeModal(this);">&times;</span>
+          
           <img class='w-100' src='{% static "img/headers/geomtry_head.png" %}'>
           <div class='form_container we_300'>
+
             <h3 class='pb-3'>Заказать звонок</h3>
 
             {{ callme_form.as_p }}
