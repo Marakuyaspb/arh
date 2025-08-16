@@ -111,6 +111,23 @@ def the_case(request, category=None, id=None):
 
 
 
+def all_news(request):
+	if request.method == 'POST':
+		callme_form = CallMeForm(request.POST)
+		if callme_form.is_valid():
+			callme = callme_form.save()
+			send_email_task.delay(callme.first_name)
+	else:
+		callme_form = CallMeForm()
+
+	context = {
+		'callme_form': callme_form
+	}
+
+	return render(request, 'renew/all_news.html', context)
+
+
+
 # MAIL
 logging.basicConfig(filename='mail_log.txt', level=logging.INFO, format='%(asctime)s - %(message)s')
 

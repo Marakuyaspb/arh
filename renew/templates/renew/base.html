@@ -51,7 +51,7 @@
       <div class="d-flex justify-content-center" id="menu">
         <hr class='hr_line'>
         <a class="nav-link " href='{% url "renew:index" %}#about'>О Компании</a>
-        <a class="nav-link " href='#'>Новости</a>
+        <a class="nav-link " href='{% url "renew:all_news" %}'>Новости</a>
         <span class='pt-2 gray'>|</span>
         <a class="nav-link" href='{% url "renew:improvement" %}'>Благоустройство</a>
         <a class="nav-link" href='{% url "renew:projection" %}'>Проектирование</a>
@@ -88,7 +88,7 @@
         <ul class="navbar-nav menu_mob_list">
 
           <li class="nav-item">
-            <a class="nav-link" href='#'>Новости</a>
+            <a class="nav-link" href='{% url "renew:all_news" %}'>Новости</a>
           </li>
           <li class="nav-item">
              <a class="nav-link" href='{% url "renew:index" %}#about'>О Компании</a>

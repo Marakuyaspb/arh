@@ -8,6 +8,7 @@ app_name = 'renew'
 urlpatterns = [
     path('', views.index, name = 'index'),
     path('improvement/', views.improvement, name = 'improvement'),
+    path('all_news/', views.all_news, name = 'all_news'),
     path('privacy/', views.privacy, name = 'privacy'),
     path('projection/', views.projection, name = 'projection'),
     path('screening/', views.screening, name = 'screening'),

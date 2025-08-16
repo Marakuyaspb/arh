@@ -4596,3 +4596,10 @@ django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 141: '
 2025-08-16 08:13:27,537 - /media/aa/A1/arh/arh/settings.py changed, reloading.
 2025-08-16 21:07:41,237 - Not Found: /favicon.ico
 2025-08-16 21:13:20,813 - Not Found: /favicon.ico
+2025-08-16 21:33:27,107 - /media/aa/A1/arh/renew/views.py changed, reloading.
+2025-08-16 21:33:43,181 - /media/aa/A1/arh/renew/urls.py changed, reloading.
+2025-08-16 21:35:43,978 - /media/aa/A1/arh/renew/views.py changed, reloading.
+2025-08-16 21:36:27,271 - /media/aa/A1/arh/renew/views.py changed, reloading.
+2025-08-16 21:36:30,881 - /media/aa/A1/arh/renew/views.py changed, reloading.
+2025-08-16 21:37:06,071 - /media/aa/A1/arh/renew/urls.py changed, reloading.
+2025-08-16 21:38:58,236 - /media/aa/A1/arh/renew/urls.py changed, reloading.
