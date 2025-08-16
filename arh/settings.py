@@ -12,7 +12,17 @@ SECRET_KEY = str(os.getenv('SECRET_KEY'))
 
 DEBUG = True
 
-ALLOWED_HOSTS = []
+#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#SECURE_SSL_REDIRECT = True
+
+#CSRF_TRUSTED_ORIGINS = ['https://aik-renovation.ru']
+
+ALLOWED_HOSTS = [
+    'aik-renovation.ru',
+    'www.aik-renovation.ru',
+    '127.0.0.1',
+    'localhost'
+]
 
 
 # Application definition
