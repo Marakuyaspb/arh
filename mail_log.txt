@@ -4585,3 +4585,12 @@ Traceback (most recent call last):
     raise self.error(
 django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 141: 'endblock', expected 'elif', 'else' or 'endif'. Did you forget to register or load this tag?
 2024-07-12 12:24:15,073 - Not Found: /favicon.ico
+2025-08-16 05:44:48,166 - /media/aa/A1/arh/arh/settings.py changed, reloading.
+2025-08-16 05:45:30,456 - /media/aa/A1/arh/arh/settings.py changed, reloading.
+2025-08-16 05:47:54,219 - /media/aa/A1/arh/arh/settings.py changed, reloading.
+2025-08-16 05:48:09,606 - /media/aa/A1/arh/arh/settings.py changed, reloading.
+2025-08-16 05:48:26,517 - /media/aa/A1/arh/arh/settings.py changed, reloading.
+2025-08-16 07:59:38,659 - Not Found: /staticfiles/img/team/mavlutov.webp
+2025-08-16 07:59:39,029 - Not Found: /favicon.ico
+2025-08-16 08:01:26,573 - /media/aa/A1/arh/arh/settings.py changed, reloading.
+2025-08-16 08:13:27,537 - /media/aa/A1/arh/arh/settings.py changed, reloading.

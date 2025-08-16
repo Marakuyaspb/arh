@@ -1,4 +1,10 @@
+all_imgs
+
 arh/.env
+
+arh/__pycache__/
+renew/__pycache__/
+
 renew/static/img/*
 renew/static/video/*
 renew/static/css/bootstrap-grid.min.css
@@ -11,4 +17,6 @@ renew/static/js/bootstrap.min.js
 renew/static/js/bootstrap.min.js.map
 renew/static/nodemodules/*
 renew/media/*
+
 db.sqlite3
+mail_log.txt
